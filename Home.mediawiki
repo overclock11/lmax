@@ -27,4 +27,31 @@
 |Relaciones corporativas con concesionarios grandes
 |}
 
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|X ||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU3||Ver la gráfica del KPI así como la información relacionada
+|-
+| || 
+|-
+| || 
+|-
+| || 
+|}
+
+
 |}
