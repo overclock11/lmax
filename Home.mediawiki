@@ -12,8 +12,19 @@
 |20 años en el negocio de vehículos
 |-
 | Trabaja hace 7 años para CCV como Gerente general
-
 |}
+
 |-
-| 3 || 4
+| Funciones 
+|
+{|
+|Definir estrategia de mercadeo venta y postventa
+|-
+|Definir la estrategia de importaciones
+|-
+|Dirigir y asegurar las directrices pactadas en la estrategia
+|-
+|Relaciones corporativas con concesionarios grandes
+|}
+
 |}
