@@ -8,3 +8,6 @@ Arquitecto encargado del atributo de calidad '''Latencia'''<br /><br />
 Arquitecto encargado del atributo de calidad '''Seguridad'''<br /><br />
 '''Ivan Ricardo Taimal Narvaez 201522369'''<br />
 Arquitecto encargado del atributo de calidad '''Escalabilidad'''<br /><br />
+
+Url del proyecto en taiga: <br/>
+[https://tree.taiga.io/project/itaimal-miso_4206_grupo_6/]
