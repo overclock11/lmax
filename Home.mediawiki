@@ -1,7 +1,10 @@
 
 =Grupo 6=
 '''Julian Felipe Borray Gutierrez 201628021'''<br />
+Arquitecto encargado del atributo de calidad '''Disponibilidad'''
 '''Gabriel J. Zapata Z. 199717927'''<br />
+Arquitecto encargado del atributo de calidad '''Latencia'''
 '''Jorge Angel Perea Bescos 200623129'''<br />
+Arquitecto encargado del atributo de calidad '''Seguridad'''
 '''Ivan Ricardo Taimal Narvaez 201522369'''<br />
-
+Arquitecto encargado del atributo de calidad '''Escalabilidad'''
