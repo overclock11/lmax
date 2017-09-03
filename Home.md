@@ -1,3 +1,10 @@
+#Grupo 6
+Julian Felipe Borray Gutierrez 201628021
+Gabriel J. Zapata Z. 199717927
+Jorge Angel Perea Bescos 200623129
+Ivan Ricardo Taimal Narvaez 201522369
+
+
 {| 
 !width="50"|Gerente General
 !width="225"|Rosario Casas
