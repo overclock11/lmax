@@ -1,8 +1,8 @@
-#Grupo 6
-Julian Felipe Borray Gutierrez 201628021
-Gabriel J. Zapata Z. 199717927
-Jorge Angel Perea Bescos 200623129
-Ivan Ricardo Taimal Narvaez 201522369
+Grupo 6
+-Julian Felipe Borray Gutierrez 201628021
+-Gabriel J. Zapata Z. 199717927
+-Jorge Angel Perea Bescos 200623129
+-Ivan Ricardo Taimal Narvaez 201522369
 
 
 {| 
