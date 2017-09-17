@@ -114,3 +114,55 @@
 |}
 
 |}
+
+
+         
+
+{| 
+!width="50"|Jefe de Taller
+!width="225"|Rodrigo Dias
+|-
+| Datos personales 
+|
+{|
+|Persona de 31 años
+|-
+|Jefe de Taller
+|-
+|Trabaja 3 años para el concesionario Auto - A
+|}
+
+|-
+| Funciones 
+|
+{|
+|Atender al cliente a su llegada
+|-
+|Informar al cliente un presupuesto inicial
+|-
+|Dirigir las reparaciones de los mecánicos
+|-
+|Atender y mantener contacto con el cliente
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+| ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU6||Ver la disponibilidad de la pieza y su costo
+|}
+
+|}
