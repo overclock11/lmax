@@ -379,3 +379,62 @@
 |}
 
 |}
+
+{| 
+!width="50"| Director de informática
+!width="225"|Humberto Trujillo
+|-
+| Datos personales 
+|
+{|
+| Persona de 34 años
+|-
+| Economista 
+|-
+| 7 años en el negocio de vehículos
+|-
+| Trabaja hace 6 años para CCV como Sub gerente post venta
+|}
+
+|-
+| Funciones 
+|
+{|
+|  Realizar y  presentar informes de gestión  del área. 
+|-
+| Establecer indicadores de rendimiento.
+|-
+| Manejo y control del personal del área
+|-
+| Garantizar la atención oportuna de las solicitudes realizadas por los clientes
+|-
+| Realizar  seguimiento de los casos abiertos o que aún no han sido resueltos
+|-
+| Establecer estrategias que permitan prestar un mejor servicio y satisfacción del cliente
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU8||Ver listado de los niveles de satisfacción por cada modelo de vehículo
+|-
+|HU9||Ver los casos escalados desde los call centers
+|-
+|HU10||Ver estadísticas de las respuestas de los clientes a las encuestas de satisfacción
+|}
+
+|}
