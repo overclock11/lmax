@@ -716,3 +716,55 @@
 |}
 
 |}
+
+
+
+{| 
+!width="50"| Desarrollador
+!width="225"|Mauricio Castillo
+|-
+| Datos personales 
+|
+{|
+|Joven de 29 años
+|-
+|Ingeniero de sistemas 
+|-
+|Tiene 4 años de experiencia
+|-
+|Trabaja 2 años en la empresa
+|}
+
+|-
+| Funciones 
+|
+{|
+|Abordar los requerimientos según la prioridad que se asignó
+|-
+|Brindar soporte a las funcionalidades de los sistemas
+|-
+|Resolver incidencias
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|X||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|_||_ _
+
+|}
+
+|}
