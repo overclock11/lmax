@@ -499,3 +499,60 @@
 |}
 
 |}
+
+
+{| 
+!width="50"| Analista post venta
+!width="225"|Victor Cortez
+|-
+| Datos personales 
+|
+{|
+| Persona de 33 años
+|-
+| Administrador de empresas
+|-
+| 5 años de experiencia
+|-
+| Trabaja hace 4 años para CCV 
+
+|}
+
+|-
+| Funciones 
+|
+{|
+|Diseño de encuestas de satisfacción al cliente
+|-
+|Analiza los resultados de las encuestas de satisfacción
+|-
+|Entrega inmediata informes al director de postventa
+|-
+|Analiza la información para identificar las causas más frecuentes de insatisfacción del cliente y de generación de servicios postventa.
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU4||Ver la gráfica de tasa de conversión de prospectos
+|-
+|HU5||Ver gráfica de número de ventas por mes filtrado por marca
+|-
+|HU8||Ver listado de los niveles de satisfacción por cada modelo de vehículo 
+|}
+
+|}
