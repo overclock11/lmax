@@ -216,3 +216,57 @@
 |}
 
 |}
+
+
+{| 
+!width="50"|Subgerente de ventas
+!width="225"|Hernan Villa
+|-
+| Datos personales 
+|
+{|
+| Persona de 38 años
+|-
+| Agente comercial
+|-
+| 15 años en el negocio de vehículos
+|-
+| Trabaja hace 4 años para CCV como Subgerente de ventas
+|}
+
+|-
+| Funciones 
+|
+{|
+| Establece los indicadores de área comercial
+|-
+| Presenta informes de gestión a la gerencia
+|-
+| Participa el plan comercial y estratégico del área
+|-
+| Realiza seguimiento a vendedores
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|X||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU4||Ver la gráfica de tasa de conversión de prospectos
+|-
+|HU5||Ver gráfica de número de ventas por mes filtrado por marca
+|}
+
+|}
