@@ -329,3 +329,53 @@
 |}
 
 |}
+
+
+{| 
+!width="50"| Director de informática
+!width="225"|Andres Muñoz
+|-
+| Datos personales 
+|
+{|
+| Persona de 39 años
+|-
+| Ingeniero de sistemas con maestría en ingeniería de software
+|-
+| 8 años de experiencia
+|-
+| Trabaja hace 5 años para CCV como director de informática
+|}
+
+|-
+| Funciones 
+|
+{|
+|  Alineación de la estrategia de TI con el negocio 
+|-
+| Habilita las capacidades técnicas y operativas  que requiera el negocio para su facturación
+|-
+| Garantiza el funcionamiento de los sistemas  de la empresa CCV 
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|X||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|_||_ _
+|}
+
+|}
