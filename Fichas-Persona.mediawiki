@@ -610,3 +610,55 @@
 |}
 
 |}
+
+
+
+
+{| 
+!width="50"| Agente call center (Encuestas de satisfacción)
+!width="225"|Carmen Villalobos
+|-
+| Datos personales 
+|
+{|
+|Joven de 26 años
+|-
+|Técnico en servicios
+|-
+|Tiene 3 años de experiencia
+|-
+|Trabaja 3 años en la empresa Conversys
+|}
+
+|-
+| Funciones 
+|
+{|
+|Contacta a los clientes registrados en el sistema para realizar yo lugar encuesta
+|-
+|Registra la información información de la llamada y las respuestas obtenidas en el sistema
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU13||Registrar quejas y reclamos de los clientes
+|-
+|HU14||Registrar las respuestas de los clientes a las encuestas
+|}
+
+|}
