@@ -662,3 +662,57 @@
 |}
 
 |}
+
+
+{| 
+!width="50"| Mecánico
+!width="225"|Camilo Agreda
+|-
+| Datos personales 
+|
+{|
+|Joven de 25 años
+|-
+|Técnico en mecánica automotriz
+|-
+|Tiene 3 años de experiencia
+|-
+|Trabaja 2 años en la empresa
+|}
+
+|-
+| Funciones 
+|
+{|
+|Llevar registros de la atención a clientes
+|-
+|Llevar registros de los repuestos utilizados
+|-
+|Hacer el mantenimiento y reparación de los vehículos
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|_ ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU15||Diligenciar registro de atención a clientes
+|-
+|HU16||Diligenciar registro de repuestos y materiales utilizados por cada atención
+|-
+|HU17||Consultar información actualizada de las partes y repuestos y materiales
+|}
+
+|}
