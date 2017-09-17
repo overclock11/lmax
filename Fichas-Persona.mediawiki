@@ -270,3 +270,62 @@
 |}
 
 |}
+
+
+
+{| 
+!width="50"|Director de mercadeo
+!width="225"|Diego Gonzales
+|-
+| Datos personales 
+|
+{|
+| Joven de 28 años
+|-
+| Comunicador social con especialización en marketing
+|-
+| Tiene 5 años de experiencia
+|-
+| Trabaja 5 años en la empresa
+|}
+
+|-
+| Funciones 
+|
+{|
+|  Llevar registros del crecimiento, estado de ventas 
+|-
+| Crear campañas publicitarias
+|-
+| Generar leads 
+|-
+| Perfilamiento de clientes
+|-
+| Gestión de comunicaciones con los clientes
+|-
+| Manejo de contenidos en redes sociales y otros medios
+|-
+| Reaccionar al comportamiento de la tasa de conversión de prospectos por marca
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU5||Ver gráfica de número de ventas por mes filtrado por marca
+|}
+
+|}
