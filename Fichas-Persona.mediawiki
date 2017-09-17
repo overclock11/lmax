@@ -556,3 +556,57 @@
 |}
 
 |}
+
+
+{| 
+!width="50"| Agente call center (Manejo de clientes)
+!width="225"|German Zuñiga
+|-
+| Datos personales 
+|
+{|
+|Joven de 28 años
+|-
+|Técnico en servicios
+|-
+|Tiene 5 años de experiencia
+|-
+|Trabaja 2 años en la empresa Conversys
+|}
+
+|-
+| Funciones 
+|
+{|
+|Atender llamadas de los clientes
+|-
+|Registrar la llamada en el sistema
+|-
+|Brinda una respuesta de acuerdo a reglas de negocio establecidas
+|-
+|Crea casos para que sean atendidos por CCV
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU13||Registrar quejas y reclamos de los clientes
+|-
+|HU14||Registrar las respuestas de los clientes a las encuestas
+|}
+
+|}
