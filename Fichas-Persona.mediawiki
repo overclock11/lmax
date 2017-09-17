@@ -438,3 +438,64 @@
 |}
 
 |}
+
+
+
+{| 
+!width="50"| Funcionario de atención al cliente
+!width="225"|Miguel Garcia
+|-
+| Datos personales 
+|
+{|
+| Persona de 34 años
+|-
+|Persona de 30 años
+|-
+|Comunicador social
+|-
+|4 años de experiencia
+|-
+|Trabaja hace 3 años para CCV como funcionario de atención al cliente
+|-
+| Economista
+|}
+
+|-
+| Funciones 
+|
+{|
+| Atender las solicitudes realizadas por clientes actuales y potenciales 
+|-
+| Dar respuesta oportuna a las solicitudes realizadas por los clientes.
+|-
+| Llevar registro de los casos ( tiempo, tipo de cliente)
+|-
+| Notificar al cliente cuando su caso está resuelto
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU11||Cerrar los casos escalados desde los call centers
+|-
+|HU12||Registrar información asociada a la conclusión de un caso
+|-
+|HU13||Registrar quejas y reclamos de los clientes
+|}
+
+|}
