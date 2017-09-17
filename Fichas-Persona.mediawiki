@@ -166,3 +166,53 @@
 |}
 
 |}
+
+
+{| 
+!width="50"|Vendedor del Concesionario-Taller
+!width="225"|Martin Gomez
+|-
+| Datos personales 
+|
+{|
+| Vendedor de vehículos
+|-
+| Experiencia 5 años en la marca
+|-
+|Trabaja hace 5 años para el concesionario Auto-full
+|}
+
+|-
+| Funciones 
+|
+{|
+| Atender al cliente a su llegada
+|-
+|Vender la cuota de vehículos impuesta al mes
+|-
+| Entrega de los vehículos
+|-
+| Tomar pedidos de los vehículos y sus características
+|}
+
+|-
+| Atributos de calidad significativos
+|
+{|
+|X ||Latencia
+|-
+|X ||Escalabilidad
+|-
+|X ||Disponibilidad
+|-
+|_||Seguridad
+|}
+
+|-
+| Historias de usuario representativas
+|
+{|
+|HU2||Ver tanto la ficha técnica como la imagen de alta definición
+|}
+
+|}
