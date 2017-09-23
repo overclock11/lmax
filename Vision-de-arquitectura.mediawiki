@@ -1,17 +1,18 @@
 =Restricciones de negocio =
 
+
 {| 
-!width="50"|Gerente General
-!width="225"|Rosario Casas
+!width="50"|ID
+!width="225"|RSN1
 |-
 | Descipción
-|
-{|
-|Persona de 42 años
+| Un vendedor no va a usar tiempo muerto para ingresar información de prospectos 
+|}
+
+{| 
+!width="50"|ID
+!width="225"|RSN2
 |-
-|Agente comercial
-|-
-|20 años en el negocio de vehículos
-|-
-| Trabaja hace 7 años para CCV como Gerente general
+| Descipción
+| La solución debe estar lista en producción para Diciembre 2017 pues en febrero entra la competencia al país
 |}
