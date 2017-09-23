@@ -60,3 +60,8 @@
 * 4. Seguridad
 
 ==5. Plan general de diseño de la arquitectura ==
+==6. Modelo de contexto ==
+==7. Modelo estático ==
+==8. Modelo componente conector ==
+==9. Modelo de despliegue ==
+
