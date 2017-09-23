@@ -60,6 +60,7 @@
 * 4. Seguridad
 
 ==5. Plan general de diseño de la arquitectura ==
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Planning.PNG]]
 ==6. Modelo de contexto ==
 ==7. Modelo estático ==
 ==8. Modelo componente conector ==
