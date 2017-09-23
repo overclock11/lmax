@@ -66,6 +66,7 @@
 ==5. Plan general de diseño de la arquitectura ==
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Planning.PNG]]
 ==6. Modelo de contexto ==
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ContextModel.PNG]]
 ==7. Modelo estático ==
 ==8. Modelo componente conector ==
 ==9. Modelo de despliegue ==
