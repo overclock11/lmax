@@ -1,11 +1,11 @@
-=1. Problema de negocio =
+==1. Problema de negocio ==
 
 * La información que se tiene no es oportuna ni confiable
 * No hay soporte sistémico efectivo a Vendedores de concesionarios ni a talleres
 * No se puede usar la información para fines estratégicos
 
 
-=2. Restricciones de negocio =
+==2. Restricciones de negocio ==
 
 {| 
 !width="50"|ID
@@ -25,7 +25,7 @@
 
 
 
-=3. Restricciones de tecnología=
+==3. Restricciones de tecnología==
 
 {| 
 !width="50"|ID
@@ -50,3 +50,11 @@
 | Descipción
 | Se debe usar el bus corporativo para consumir y exponer servicios
 |}
+
+==4. Priorización Atributos de Calidad ==
+
+ La priorización se hace para atacar los atributos de calidad en el siguiente orden:
+* 1. Latencia
+* 2. Escalabilidad
+* 3. Disponibilidad
+* 4. Seguridad
