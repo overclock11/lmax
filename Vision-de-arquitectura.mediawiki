@@ -1,5 +1,11 @@
-=Restricciones de negocio =
+=1. Problema de negocio =
 
+* La información que se tiene no es oportuna ni confiable
+* No hay soporte sistémico efectivo a Vendedores de concesionarios ni a talleres
+* No se puede usar la información para fines estratégicos
+
+
+=2. Restricciones de negocio =
 
 {| 
 !width="50"|ID
@@ -15,4 +21,32 @@
 |-
 | Descipción
 | La solución debe estar lista en producción para Diciembre 2017 pues en febrero entra la competencia al país
+|}
+
+
+
+=3. Restricciones de tecnología=
+
+{| 
+!width="50"|ID
+!width="225"|RST1
+|-
+| Descipción
+| El software debe correr en tablets de cualquier vendor (apple, android, microsoft) y correr tanto en Wi-Fi como en redes móviles
+|}
+
+{| 
+!width="50"|ID
+!width="225"|RST2
+|-
+| Descipción
+| Se debe integrar con los sistemas de back office. No se hará inversión en los sistemas existentes
+|}
+
+{| 
+!width="50"|ID
+!width="225"|RST3
+|-
+| Descipción
+| Se debe usar el bus corporativo para consumir y exponer servicios
 |}
