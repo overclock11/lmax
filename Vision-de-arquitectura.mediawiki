@@ -59,6 +59,10 @@
 * 3. Disponibilidad
 * 4. Seguridad
 
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/QualityAttributesPrioritization_1.PNG]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/QualityAttributesPrioritization_2.PNG]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/QualityAttributesPrioritization_4.PNG]]
+
 ==5. Plan general de diseño de la arquitectura ==
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Planning.PNG]]
 ==6. Modelo de contexto ==
