@@ -58,3 +58,5 @@
 * 2. Escalabilidad
 * 3. Disponibilidad
 * 4. Seguridad
+
+==5. Plan general de diseño de la arquitectura ==
