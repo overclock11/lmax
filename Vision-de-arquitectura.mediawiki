@@ -72,4 +72,5 @@
 ==8. Modelo componente conector ==
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/GZAPATA%20CC%20COMP.png]]
 ==9. Modelo de despliegue ==
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DeployModel.PNG]]
 
