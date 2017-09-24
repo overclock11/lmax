@@ -69,6 +69,7 @@
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ContextModel.PNG]]
 ==7. Modelo estático ==
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/vista%20funcional%20stakeholders.png]]
+=Modelo de entidad relación=
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/punto-informacion.png]]
 ==8. Modelo componente conector ==
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/GZAPATA%20CC%20COMP.png]]
