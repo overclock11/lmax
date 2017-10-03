@@ -27,5 +27,5 @@ COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesi
 # Vistas
 ## Component & Connector
 ### Vista Funcional
-
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/QualityAttributesPrioritization_3.PNG]]
 
