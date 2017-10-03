@@ -28,3 +28,19 @@ COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesi
 ## Component & Connector
 ### Vista Funcional
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/VistaFuncionalLMAX-LAMBDA-MAPRED.png]]
+
+# Estilo de Arquitectura 
+## LMAX
+Usaremos el estilo de arquitectura LMAX para las transacciones enviadas por los jefes de taller y los vendedores de concesionarios, que esperar una baja latencia pues están caminando con el cliente entre los vehículos o el taller
+
+## LAMBDA
+Usaremos el estilo de arquitectura LAMBDA para procesar los archivos en Batch de las ventas y las reparaciones en talleres por los volúmenes de información que llegara y la información en tiempo real que envíen los vendedores y jefes de taller como transacciones individuales en tiempo real. Con este estilo de arquitectura: Se procesará la información en Batch y se complementara con la información en tiempo real de modo que los principales Stakeholder tengan los KPI requeridos para la toma de decisiones con una visión fresca de los movimiento del mercado
+
+# Tácticas de Arquitectura 
+## Map Reduce
+Usaremos map reduce en el estilo Lambda para crear la capa batch ya que recibimos archivos de dos fuentes: Ventas y Postventas luego deben ser procesados y unidos basado en el cliente para tener una visión 360 del cliente: Lo que le interesa comprar, lo que realmente compro y el servicio que le da a su vehículo. También usaremos la táctica de map reduce en la capa de servicio de lambda para unir la información que viene de la capa Batch, con la información que viene de la capa Speed. 
+
+## Cache de Información
+Colocaremos la información de productos (vehículos, partes) en cache de forma que los procesos como Business Logic en LMAX y la capa de procesamiento de LAMBDA que consultan productos se vean beneficiados por la baja latencia ya que la información probablemente se encuentra en la memoria cache
+
+ 
