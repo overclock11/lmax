@@ -23,3 +23,9 @@ COMO Subgerente de postventa CUANDO consulto el listado de existencias de repues
 
 ## ASR38
 COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesionario, DADO QUE el sistema opera normalmente QUIERO ver la gráfica de tendencia actualizada hasta el momento de la consulta PARA aplicar promociones y campañas de mercadeo. ESTO DEBE presentarse con información dada por los concesionarios actualizada hasta la última hora de la consulta 
+
+# Vistas
+## Component & Connector
+### Vista Funcional
+
+
