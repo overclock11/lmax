@@ -27,7 +27,7 @@ COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesi
 
 # Video del experimento
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
-
+[![Estilo de Arquitectura LMAX](https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Lmax-architecture.PNG)](https://drive.google.com/open?id=0BzuXVblyDImnSGZDQ3Rwb3N0WEk "Estilo de Arquitectura LMAX")
 
 # Vistas
 ## Component & Connector
