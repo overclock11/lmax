@@ -25,6 +25,8 @@ COMO Subgerente de postventa CUANDO consulto el listado de existencias de repues
 COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesionario, DADO QUE el sistema opera normalmente QUIERO ver la gráfica de tendencia actualizada hasta el momento de la consulta PARA aplicar promociones y campañas de mercadeo. ESTO DEBE presentarse con información dada por los concesionarios actualizada hasta la última hora de la consulta 
 
 # Puntos de Sensibilidad
+Video: [[https://drive.google.com/open?id=0BzuXVblyDImnUkpUcW1rbXgyTjg]]
+
 ## Conocimiento de lo que sucede en los talleres y concesionarios: 
 Las directivas de CCV tienen problemas para saber que pasa realmente en concesionarios y talleres, pues en la actualidad esa información les llega con semanas de atraso lo que no les permite tomar decisiones con dicha información. CCV requiere procesar esa información y tenerla disponible para su uso en la toma de decisiones de manera oportuna
 
