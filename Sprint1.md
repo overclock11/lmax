@@ -54,6 +54,8 @@ Con estas peticiones se pretende experimentar la latencia en la arquitectura sel
 ## Resultados
 Como herramienta de medición de resultados utilizamos JMETER, la cual nos permitió obtener los valores de tiempo para las peticiones realizadas por el usuario. 
 De acuerdo a la grafica de resultados, se obtuvo un tiempo minimo de 30 ms y un tiempo maximo de 142 ms, esto garantiza que la arquitectura cumplira con las expectativas de los stakeholder en cuanto a Latencia.
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/jmeter1.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/jmeter4.png]]
 
 
 # Vistas
