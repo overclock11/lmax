@@ -34,7 +34,7 @@ Las directivas de CCV tienen problemas para saber que pasa realmente en concesio
 En la actualidad CCV no tiene forma de conocer que pasa con un prospecto dentro del concesionario, que vehículo es el preferido bien sea de CCV o de la competencia lo cual los limita para sacar campañas de mercadeo mas focalizadas, para esto CCV requiere proveer de herramientas a los vendedores de los concesionarios para facilitarles la venta a la vez que CCV conoce el comportamiento del mercado
 
 # Video del experimento
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
+Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
 [![Estilo de Arquitectura LMAX](https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Lmax-architecture.PNG)](https://drive.google.com/open?id=0BzuXVblyDImnSGZDQ3Rwb3N0WEk "Estilo de Arquitectura LMAX")
 
 # Resumen experimento
@@ -54,6 +54,7 @@ La prueba fue diseñada para simular un usuario haciendo peticiones POST cada se
 Con estas peticiones se pretende experimentar la latencia en la arquitectura seleccionada en este caso LMAX, cada petición está compuesta por un objeto JSON que es recibido por el sistema e insertado en la cola del input disruptor para ser procesado y generar una respuesta.
 
 ## Resultados
+Video: [[https://drive.google.com/open?id=0BzuXVblyDImnMGJMOW9OQkJfQlE]]
 Como herramienta de medición de resultados utilizamos JMETER, la cual nos permitió obtener los valores de tiempo para las peticiones realizadas por el usuario. 
 De acuerdo a la grafica de resultados, se obtuvo un tiempo minimo de 30 ms y un tiempo maximo de 142 ms, esto garantiza que la arquitectura cumplira con las expectativas de los stakeholder en cuanto a Latencia.
 
