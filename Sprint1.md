@@ -35,6 +35,27 @@ En la actualidad CCV no tiene forma de conocer que pasa con un prospecto dentro 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
 [![Estilo de Arquitectura LMAX](https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Lmax-architecture.PNG)](https://drive.google.com/open?id=0BzuXVblyDImnSGZDQ3Rwb3N0WEk "Estilo de Arquitectura LMAX")
 
+# Resumen experimento
+Para el diseño presentado por el equipo se decidió realizar el experimento de latencia sobre los componentes de venta y postventa los cuales están relacionados con los siguientes ASR:
+
+ASR1: Visualización de información de vehículos por parte de los vendedores en vitrina. Este ASR debe ejecutarse en un tiempo no mayor a 2 segundos.
+ASR2: Creación de prospecto de compra de vehículo en el sistema, esto debe suceder en un tiempo no mayor a 1 seg
+
+Estos dos ASR son de gran importancia ya que parte del éxito de ventas y flujo de ingresos de CCV depende del trabajo que los vendedores realizan en concesionarios con posibles cliente, todo esto apoyado en la plataforma tecnológica de la empresa. Esta información debe darse de forma rápida para poder atender la mayor cantidad de clientes posible y generar las mayores oportunidades de venta.
+
+La parte crítica del diseño de este componente se encuentra en la recepción de las peticiones de los clientes web y móviles, estas deben ser procesadas rápidamente ya que en días de bastante ocupación es de gran criticidad una atención oportuna a los clientes.
+
+Se reciben peticiones REST que son atendidas por un componente de estilo arquitectural LMAX. Este permite procesar una gran cantidad de peticiones debido a la cola circular que utiliza, lo cual hace que el sistema pueda atender múltiples peticiones en un solo thread de ejecución. 
+
+## Procedimiento
+La prueba fue diseñada para simular un usuario haciendo peticiones POST cada segundo durante un minuto.
+Con estas peticiones se pretende experimentar la latencia en la arquitectura seleccionada en este caso LMAX, cada petición está compuesta por un objeto JSON que es recibido por el sistema e insertado en la cola del input disruptor para ser procesado y generar una respuesta.
+
+## Resultados
+Como herramienta de medición de resultados utilizamos JMETER, la cual nos permitió obtener los valores de tiempo para las peticiones realizadas por el usuario. 
+De acuerdo a la grafica de resultados, se obtuvo un tiempo minimo de 30 ms y un tiempo maximo de 142 ms, esto garantiza que la arquitectura cumplira con las expectativas de los stakeholder en cuanto a Latencia.
+
+
 # Vistas
 ## Component & Connector
 ### Vista Funcional
