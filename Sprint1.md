@@ -81,4 +81,15 @@ Usaremos map reduce en el estilo Lambda para crear la capa batch ya que recibimo
 ## Cache de Información
 Colocaremos la información de productos (vehículos, partes) en cache de forma que los procesos como Business Logic en LMAX y la capa de procesamiento de LAMBDA que consultan productos se vean beneficiados por la baja latencia ya que la información probablemente se encuentra en la memoria cache
 
+# Retrospectiva trabajo de equipo
+
+## Aspectos que han funcionado
+Para el trabajo en el Sprint 1, se realizo una coordinación de trabajo efectiva entre los miembros del equipo, todos los miembros estuvieron involucrados tanto en diseño como en desarrollo de la arquitectura y experimento. La buena comunicación del equipo permitió conseguir unos resultados satisfactorios al final del Sprint 1.
+
+## Aspectos que no han funcionado correctamente
+
+La elección de herramientas para el desarrollo del experimento dificulto la tarea para los miembros del equipo ya que habían ciertos aspectos que el equipo no dominaba en su totalidad, por lo cual fue necesario realizar esfuerzos extra para poder nivelar el conocimiento del equipo y lograr el desarrollo del experimento.
+
+Por lo pronto consideramos que el equipo ya posee el conocimiento suficiente sobre las herramientas escogidas para poder superar las siguientes experimentos.
+
  
