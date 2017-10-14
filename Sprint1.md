@@ -73,6 +73,9 @@ Estadísticas de tiempos
 ### Vista Información
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/VistaInformacion.png]]
 
+### Vista despliegue
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama%20de%20despliegue.png]]
+
 # Estilo de Arquitectura 
 ## LMAX
 Usaremos el estilo de arquitectura LMAX para las transacciones enviadas por los jefes de taller y los vendedores de concesionarios, que esperar una baja latencia pues están caminando con el cliente entre los vehículos o el taller
