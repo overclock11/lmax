@@ -13,6 +13,11 @@ ASR 8: COMO vendedor de concesionario CUANDO creo una Cotizacion DADO QUE el sis
 
 ## Arquitectura
 
+## Estilo de Arquitectura
+Por la descomposición dominante ya estamos comprometidos con los estilos de arquitectura
+LMAX para respuesta rapida a vendedores y jefes de taller 
+LAMBDA para proceso rapido de información de forma que las directivas de CCV puedan tomar decisiones 
+
 ## Tácticas de Arquitectura
 
 ### Scaling Out 
