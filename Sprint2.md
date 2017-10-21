@@ -4,6 +4,9 @@ En el Sprint 2 el atributo de calidad que vamos a iniciar es el de Escalabilidad
 
 ## ASR
 
+ASR 11: COMO Gerente de mercadeo CUANDO para las fechas especiales (Dias de la Madre, Fines de semana de feria), DADO QUE el sistema opera con sobrecarga QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 2 segundos, dado que hay 1000 vendedores adicionales con clientes simultáneamente haciendo cotizaciones. 
+
+
 ASR 4: COMO vendedor de concesionario CUANDO ingreso un modelo de vehículo, DADO QUE el sistema opera con sobrecarga QUIERO ver tanto la ficha técnica como la imagen en alta definición PARA mostrarlo al cliente y acelerar el proceso de compra. ESTO DEBE suceder en menos de 2 segundos, dado que hay 500 vendedores con clientes simultáneamente haciendo cotizaciones. 
 
 ASR 8: COMO vendedor de concesionario CUANDO creo una Cotizacion DADO QUE el sistema opera normalmente QUIERO cargar la información del mismo y obtener el total de la cotización PARA que el cliente vea el valor, descuentos, y color en existencia ESTO DEBE suceder en 1 segundo, dado que hay 500 vendedores con clientes simultáneamente haciendo cotizaciones. 
