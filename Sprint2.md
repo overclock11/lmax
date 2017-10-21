@@ -18,6 +18,7 @@ ASR 8: COMO vendedor de concesionario CUANDO creo una Cotizacion DADO QUE el sis
 Vista Funcional
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Captura%20de%20pantalla%202017-10-21%20a%20la(s)%209.17.14%20a.m..png]]
 
+## Puntos de Sensibilidad
 
-
+La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y componentes de negocio para poder reaccionar a los eventos especiales ya que pueden ocurrir en cualquier momento
 
