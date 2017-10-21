@@ -33,4 +33,4 @@ Vista Funcional
 
 ## Puntos de Sensibilidad
 
-La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y componentes de negocio para poder reaccionar a los eventos especiales ya que pueden ocurrir en cualquier momento
+La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y componentes de negocio para poder reaccionar a los eventos especiales ya que genera un aumento considerable en la carga del sistema
