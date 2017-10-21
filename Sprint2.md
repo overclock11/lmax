@@ -19,7 +19,7 @@ Por la descomposición dominante ya estamos comprometidos con los estilos de arq
 Para respuesta rapida a vendedores y jefes de taller.
 
 ### LAMBDA 
-para proceso rapido de información de forma que las directivas de CCV puedan tomar decisiones 
+Para proceso rapido de información de forma que las directivas de CCV puedan tomar decisiones 
 
 ## Tácticas de Arquitectura
 
