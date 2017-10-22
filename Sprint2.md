@@ -1,13 +1,23 @@
-# Sprint 2 - Escalabilidad
-
 # Tabla de contenidos
 - [Introducción](#introducción)
+- [Requerimientos ASR](#requerimientos-asr)
+ - [Arquitectura Propuesta](#arquitectura-propuesta)
+   - [General](#general)
+   - [Estilo de Arquitectura](#estilo-de-arquitectura)
+   - [Tácticas de Arquitectura](#tácticas-de-arquitectura)
+    - [Vistas](#vistas)
+      - [Vista Funcional](#vista-funcional)
+      - [Vista Despliegue](#vista-despliegue)
+      - [Vista Concurrencia](#vista-concurrencia)
+
+
+
 
 ## Introducción
 
 En el Sprint 2 el trabajo se enfocara en el atributo de calidad Escalabilidad, para esto se realizo la priorización de una serie de ASR que se consideraron de gran importancia tanto para los Stakeholder como el diseño de la arquitectura. Se diseñara un experimento de arquitectura con el objetivo de validar la propuesta de diseño del equipo para satisfacer los ASR.
 
-## ASR
+## Requerimientos ASR
 
 ASR 11: COMO Gerente de mercadeo CUANDO para las fechas especiales (Dias de la Madre, Fines de semana de feria), DADO QUE el sistema opera con sobrecarga QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 2 segundos, dado que hay 1000 vendedores adicionales para un total de 1500 con clientes simultáneamente haciendo cotizaciones. 
 
@@ -16,30 +26,33 @@ ASR 4: COMO vendedor de concesionario CUANDO ingreso un modelo de vehículo, DAD
 
 ASR 8: COMO vendedor de concesionario CUANDO creo una Cotizacion DADO QUE el sistema opera normalmente QUIERO cargar la información del mismo y obtener el total de la cotización PARA que el cliente vea el valor, descuentos, y color en existencia ESTO DEBE suceder en 1 segundo, dado que hay 500 vendedores con clientes simultáneamente haciendo cotizaciones. 
 
-## Arquitectura
+## Arquitectura propuesta
 
-## Estilo de Arquitectura
+### General
+
+### Estilo de Arquitectura
 Por la descomposición dominante ya estamos comprometidos con los estilos de arquitectura
-### LMAX 
+
+#### LMAX 
 Para respuesta rapida a vendedores y jefes de taller.
 
-### LAMBDA 
+#### LAMBDA 
 Para proceso rapido de información de forma que las directivas de CCV puedan tomar decisiones 
 
-## Tácticas de Arquitectura
+### Tácticas de Arquitectura
 
-### Scaling Out 
+#### Scaling Out 
 Permitir auto-escalar instancias del Business Logic para procesar mas cotizaciones por unidad de tiempo 
 
-### Replicación de componentes de negocio
+#### Replicación de componentes de negocio
 Replicar el componente de procesamiento de negocio y el catalogo de productos por región para poder cumplir con los picos de demanda
 
-### Scaling Up
+#### Scaling Up
 Para aumentar la capacidad del HW que alberga los Disruptores de entrada y de salida de 50 a 1500 para los días de la madre y ferias de vehículos
 
-## Vistas
+### Vistas
 
-### Vista Funcional
+#### Vista Funcional
 
 Vista Funcional
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Captura%20de%20pantalla%202017-10-21%20a%20la(s)%209.17.14%20a.m..png]]
