@@ -7,8 +7,17 @@
    - [Tácticas de Arquitectura](#tácticas-de-arquitectura)
     - [Vistas](#vistas)
       - [Vista Funcional](#vista-funcional)
-      - [Vista Despliegue](#vista-despliegue)
-      - [Vista Concurrencia](#vista-concurrencia)
+      - [Vista de Despliegue](#vista-de-despliegue)
+      - [Vista de Concurrencia](#vista-de-concurrencia)
+- [Puntos de Sensibilidad](#puntos-de-sensibilidad)
+ - [Experimento](#experimento)
+   - [Problema a Resolver](#problema-a-resolver)
+   - [Diseño del Experimento](#diseño-del-experimento)
+   - [Implementación del Experimento](#implementación-del-experimento)
+   - [Resultados](#resultados)
+   - [Análisis de Resultados y Respuesta al problema](#análisis-de-resultados-y-respuesta-al-problema)
+- [Retrospectiva](#retrospectiva)
+- [Conclusiones](#conclusiones)
 
 
 
@@ -54,15 +63,27 @@ Para aumentar la capacidad del HW que alberga los Disruptores de entrada y de sa
 
 #### Vista Funcional
 
-Vista Funcional
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Captura%20de%20pantalla%202017-10-21%20a%20la(s)%209.17.14%20a.m..png]]
 
-### Vista de despliege
+#### Vista de Despliegue
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Despliegue%20escalabilidad.png]]
 
+#### Vista de Concurrencia
+
 ## Puntos de Sensibilidad
 
-La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y componentes de negocio para poder reaccionar a los eventos especiales ya que genera un aumento considerable en la carga del sistema
+La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y componentes de negocio para poder reaccionar a los eventos especiales ya que genera un aumento considerable en la carga del sistema.
+
+## Experimento
+
+### Problema a Resolver
+### Diseño del Experimento
+### Implementación del Experimento
+### Resultados
+### Análisis de Resultados y Respuesta al problema
+
+## Retrospectiva
+## Conclusiones
 
 
