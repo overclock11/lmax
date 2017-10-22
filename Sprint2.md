@@ -1,6 +1,11 @@
 # Sprint 2 - Escalabilidad
 
-En el Sprint 2 el atributo de calidad que vamos a iniciar es el de Escalabilidad dada la prioridad de los Stakeholders del proyecto el cual quedó en segundo lugar después de la Latencia.
+# Tabla de contenidos
+- [Introducción](#introducción)
+
+## Introducción
+
+En el Sprint 2 el trabajo se enfocara en el atributo de calidad Escalabilidad, para esto se realizo la priorización de una serie de ASR que se consideraron de gran importancia tanto para los Stakeholder como el diseño de la arquitectura. Se diseñara un experimento de arquitectura con el objetivo de validar la propuesta de diseño del equipo para satisfacer los ASR.
 
 ## ASR
 
