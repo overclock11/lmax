@@ -56,7 +56,11 @@ Permitir auto-escalar instancias del Business Logic para procesar mas cotizacion
 Replicar el componente de procesamiento de negocio y el catalogo de productos por región para poder cumplir con los picos de demanda
 
 #### Scaling Up
-Para aumentar la capacidad del HW que alberga los Disruptores de entrada y de salida de 50 a 1500 para los días de la madre y ferias de vehículos
+Para aumentar la capacidad del HW que alberga los Disruptores de entrada y de salida para que puedan soportar el aumento en el tamaño de las colas de 200 a 500 para los días de la madre y ferias de vehículos
+200 slots para dias normales (Incluyendo los aumentos súbitos de demanda ASR14)
+a
+500 slots para el dia de la madre y feria automotriz
+Este aumento temporal de HW se debe realizar tres días antes del evento y durar hasta una semana después del evento dado que las promociones viven un poco mas que el evento (Pre-Feria, Post-Feria) (ASR11)
 
 ### Vistas
 
@@ -84,4 +88,3 @@ La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX 
 
 ## Retrospectiva
 ## Conclusiones
-
