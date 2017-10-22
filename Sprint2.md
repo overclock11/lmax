@@ -37,6 +37,7 @@ COMO Gerente de mercadeo CUANDO diferentes concesionarios hacen campañas partic
 ## Arquitectura propuesta
 
 ### General
+La propuesta de arquitectura de este sprint comprende la unificación de las decisiones tomadas en el sprint 1 para favorecer la Latencia con las que el equipo ha tomado para favorecer la Escalabilidad. Las tácticas a aplicar tienen por objetivo el trabajar en conjunto con el estilo arquitectural LMAX para que el sistema se comporte de forma adecuada en momentos de gran estrés.
 
 ### Estilo de Arquitectura
 Por la descomposición dominante ya estamos comprometidos con los estilos de arquitectura
