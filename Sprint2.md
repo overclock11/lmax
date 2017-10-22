@@ -28,12 +28,9 @@ En el Sprint 2 el trabajo se enfocara en el atributo de calidad Escalabilidad, p
 
 ## Requerimientos ASR
 
-ASR 11: COMO Gerente de mercadeo CUANDO para las fechas especiales (Dias de la Madre, Fines de semana de feria), DADO QUE el sistema opera con sobrecarga QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 2 segundos, dado que hay 1000 vendedores adicionales para un total de 1500 con clientes simultáneamente haciendo cotizaciones. 
+ASR 11: COMO Gerente de mercadeo CUANDO para las fechas especiales (Dias de la Madre, Fines de semana de feria), DADO QUE el sistema opera con sobrecarga QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 2 segundos, dado que hay 1000 vendedores adicionales para un total de 1500 con clientes simultáneamente haciendo cotizaciones. Se estima que 1/3 de los vendedores envían cotizaciones en el mismo momento.
 
-
-ASR 4: COMO vendedor de concesionario CUANDO ingreso un modelo de vehículo, DADO QUE el sistema opera con sobrecarga QUIERO ver tanto la ficha técnica como la imagen en alta definición PARA mostrarlo al cliente y acelerar el proceso de compra. ESTO DEBE suceder en menos de 2 segundos, dado que hay 500 vendedores con clientes simultáneamente haciendo cotizaciones. 
-
-ASR 8: COMO vendedor de concesionario CUANDO creo una Cotizacion DADO QUE el sistema opera normalmente QUIERO cargar la información del mismo y obtener el total de la cotización PARA que el cliente vea el valor, descuentos, y color en existencia ESTO DEBE suceder en 1 segundo, dado que hay 500 vendedores con clientes simultáneamente haciendo cotizaciones. 
+ASR 11: COMO Gerente de mercadeo CUANDO diferentes concesionarios hacen campañas particularmente en fines de semana DADO QUE el sistema opera normalmente QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 1 segundos, dado que los requerimientos de cotizaciones sobre el sistema pueden aumentar entre un 10% y un 20% sin previo aviso dadas estas campañas sorpresa. En condiciones normales hay 500 vendedores accediendo el sistema, pero en ocasiones cuando se cruzan campañas en varios concesionarios los vendedores pueden aumentar entre 550 y 600 vendedores activos. Se estima que 1/3 de los vendedores envían cotizaciones en el mismo momento.
 
 ## Arquitectura propuesta
 
@@ -85,5 +82,4 @@ La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX 
 
 ## Retrospectiva
 ## Conclusiones
-
 
