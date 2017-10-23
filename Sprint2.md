@@ -73,8 +73,6 @@ Este aumento temporal de HW se debe realizar tres días antes del evento y durar
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Despliegue%20escalabilidad.png]]
 
-#### Vista de Concurrencia
-
 ## Puntos de Sensibilidad
 
 La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y replicación de componentes de negocio en ese nuevo HW y aumento de la capacidad de los disruptores para poder reaccionar a los eventos especiales ya que genera un aumento considerable en la carga del sistema.
