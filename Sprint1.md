@@ -24,14 +24,8 @@ COMO Subgerente de postventa CUANDO consulto el listado de existencias de repues
 ## ASR38
 COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesionario, DADO QUE el sistema opera normalmente QUIERO ver la gráfica de tendencia actualizada hasta el momento de la consulta PARA aplicar promociones y campañas de mercadeo. ESTO DEBE presentarse con información dada por los concesionarios actualizada hasta la última hora de la consulta 
 
-# Puntos de Sensibilidad
+
 Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/puntos%20de%20sensibilidad.mp4]]
-
-## Conocimiento de lo que sucede en los talleres y concesionarios: 
-Las directivas de CCV tienen problemas para saber que pasa realmente en concesionarios y talleres, pues en la actualidad esa información les llega con semanas de atraso lo que no les permite tomar decisiones con dicha información. CCV requiere procesar esa información y tenerla disponible para su uso en la toma de decisiones de manera oportuna
-
-## Conocimiento del prospecto y posible cliente: 
-En la actualidad CCV no tiene forma de conocer que pasa con un prospecto dentro del concesionario, que vehículo es el preferido bien sea de CCV o de la competencia lo cual los limita para sacar campañas de mercadeo mas focalizadas, para esto CCV requiere proveer de herramientas a los vendedores de los concesionarios para facilitarles la venta a la vez que CCV conoce el comportamiento del mercado
 
 # Video del experimento
 Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
@@ -89,6 +83,10 @@ Usaremos map reduce en el estilo Lambda para crear la capa batch ya que recibimo
 
 ## Cache de Información
 Colocaremos la información de productos (vehículos, partes) en cache de forma que los procesos como Business Logic en LMAX y la capa de procesamiento de LAMBDA que consultan productos se vean beneficiados por la baja latencia ya que la información probablemente se encuentra en la memoria cache
+
+# Puntos de Sensibilidad
+## Conocimiento de lo que sucede en los talleres y concesionarios: 
+Se tomó una decisión critica de diseño que consiste en usar el estilo de arquitectura LAMBDA para procesamiento de información pero usando la capa "Speed" con arquitectura LMAX para que a la vez que se sirve a los vendedores y jefes de taller en cotizaciones, información de producto, complementa la información que requieren los directivos de CCV para el apoyo a la toma de desiciones. Ya que las directivas de CCV tienen problemas para saber que pasa realmente en concesionarios y talleres, pues en la actualidad esa información les llega con semanas de atraso lo que no les permite tomar decisiones con dicha información. CCV requiere procesar esa información y tenerla disponible para su uso en la toma de decisiones de manera oportuna
 
 # Retrospectiva trabajo de equipo
 
