@@ -17,7 +17,5 @@ Fichas persona de los stakeholders del proyecto:<br/>
 
 # Sprints
 
-[[Sprint1]]
-
-[[Sprint2]]
-
+## [Sprint 1 - Latencia](https://github.com/MISO-4206/Grupo-6/wiki/Sprint1)
+## [Sprint 2 - Escalabilidad](https://github.com/MISO-4206/Grupo-6/wiki/Sprint2)
