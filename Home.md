@@ -19,11 +19,11 @@ https://github.com/MISO-4206/Grupo-6/wiki
 Url del proyecto en taiga: <br/>
 [https://tree.taiga.io/project/itaimal-miso_4206_grupo_6/]
 
-# Fichas persona de los stakeholders del proyecto:<br/>
+# Stakeholders
 [[Fichas persona]]
 
 # Sprints
 
-## [Sprinto 0 - Visión de Arquitectura]
+## [Sprinto 0 - Visión de Arquitectura]((https://github.com/MISO-4206/Grupo-6/wiki/Sprint1))
 ## [Sprint 1 - Latencia](https://github.com/MISO-4206/Grupo-6/wiki/Sprint1)
 ## [Sprint 2 - Escalabilidad](https://github.com/MISO-4206/Grupo-6/wiki/Sprint2)
