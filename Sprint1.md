@@ -1,13 +1,13 @@
 En el Sprint 1 el atributo de calidad que vamos a iniciar es el de Latencia dada la prioridad de los Stakeholders del proyecto.
 
 # ASR Cubiertos en el Sprint 1: Latencia
-Estos ASR fueron clasificados y prioridades entre arquitectura y el grupo de Stakeholders según su nivel de riesgo. Ellos son:
+Estos ASR fueron clasificados y priorizados entre arquitectura y el grupo de Stakeholders según su nivel de riesgo. Ellos son:
 
 ## ASR1
-COMO vendedor de concesionario CUANDO ingreso un modelo de vehículo, DADO QUE el sistema opera normalmente QUIERO ver tanto la ficha técnica como la imagen en alta definición PARA mostrarlo al cliente y acelerar el proceso de compra. ESTO DEBE suceder en menos de 10 segundos.
+COMO vendedor de concesionario CUANDO ingreso un modelo de vehículo, DADO QUE el sistema opera normalmente QUIERO ver tanto la ficha técnica como la imagen en alta definición PARA mostrarlo al cliente y acelerar el proceso de compra. ESTO DEBE suceder en menos de 1 segundos.
 
 ## ASR3
-COMO vendedor de concesionario CUANDO ingreso la identificación del prospecto, DADO QUE el sistema opera normalmente QUIERO que el sistema me traiga toda su información PARA consultar el perfil y los intereses mostrados por el cliente anteriormente. ESTO DEBE suceder en menos de 2 segundos por campo. 
+COMO vendedor de concesionario CUANDO ingreso la identificación del prospecto, DADO QUE el sistema opera normalmente QUIERO que el sistema me traiga toda su información PARA consultar el perfil y los intereses mostrados por el cliente anteriormente. ESTO DEBE suceder en menos de 1 segundos por campo. 
 
 ## ASR2
 COMO vendedor de concesionario CUANDO ingreso cada dato del prospecto, DADO QUE el sistema opera normalmente QUIERO crear lo más rápidamente posible la información del prospecto para dedicarme a la venta PARA poder presentar al cliente las bondades del vehículo y enviarlo luego a su correo. ESTO DEBE suceder en menos de 1 segundo por campo
