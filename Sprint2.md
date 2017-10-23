@@ -71,7 +71,7 @@ Este aumento temporal de HW se debe realizar tres días antes del evento y durar
 
 #### Vista de Despliegue
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Despliegue%20escalabilidad.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DespliegueEscalabilidad.png]]
 
 ## Puntos de Sensibilidad
 
