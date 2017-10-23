@@ -24,6 +24,6 @@ Url del proyecto en taiga: <br/>
 
 # Sprints
 
-## [Sprinto 0 - Visión de Arquitectura]((https://github.com/MISO-4206/Grupo-6/wiki/Vision-de-arquitectura))
+## [Sprint 0 - Visión de Arquitectura](https://github.com/MISO-4206/Grupo-6/wiki/Vision-de-arquitectura)
 ## [Sprint 1 - Latencia](https://github.com/MISO-4206/Grupo-6/wiki/Sprint1)
 ## [Sprint 2 - Escalabilidad](https://github.com/MISO-4206/Grupo-6/wiki/Sprint2)
