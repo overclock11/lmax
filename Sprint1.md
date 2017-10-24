@@ -1,30 +1,61 @@
-En el Sprint 1 el atributo de calidad que vamos a iniciar es el de Latencia dada la prioridad de los Stakeholders del proyecto.
+# Tabla de contenidos
+- [Introducción](#introducción)
+- [Requerimientos ASR](#requerimientos-asr)
+ - [Arquitectura Propuesta](#arquitectura-propuesta)
+   - [General](#general)
+   - [Estilo de Arquitectura](#estilo-de-arquitectura)
+   - [Tácticas de Arquitectura](#tácticas-de-arquitectura)
+    - [Vistas](#vistas)
+      - [Vista Funcional](#vista-funcional)
+      - [Vista de Despliegue](#vista-de-despliegue)
+      - [Vista de Concurrencia](#vista-de-concurrencia)
+- [Puntos de Sensibilidad](#puntos-de-sensibilidad)
+ - [Experimento](#experimento)
+   - [Problema a Resolver](#problema-a-resolver)
+   - [Diseño del Experimento](#diseño-del-experimento)
+   - [Implementación del Experimento](#implementación-del-experimento)
+   - [Resultados](#resultados)
+   - [Análisis de Resultados y Respuesta al problema](#análisis-de-resultados-y-respuesta-al-problema)
+- [Retrospectiva](#retrospectiva)
+- [Conclusiones](#conclusiones)
+
+
+## Introducción
+
+En el Sprint 1 el trabajo se enfocara en el atributo de calidad Latencia, para esto se realizo la priorización de una serie de ASR que se consideraron de gran importancia tanto para los Stakeholder como el diseño de la arquitectura. Se diseñara un experimento de arquitectura con el objetivo de validar la propuesta de diseño del equipo para satisfacer los ASR.
 
 # ASR Cubiertos en el Sprint 1: Latencia
 Estos ASR fueron clasificados y priorizados entre arquitectura y el grupo de Stakeholders según su nivel de riesgo. Ellos son:
 
-## ASR1
+## Requerimientos ASR
+
+### ASR1
 COMO vendedor de concesionario CUANDO ingreso un modelo de vehículo, DADO QUE el sistema opera normalmente QUIERO ver tanto la ficha técnica como la imagen en alta definición PARA mostrarlo al cliente y acelerar el proceso de compra. ESTO DEBE suceder en menos de 2 segundos.
 
-## ASR3
+### ASR3
 COMO vendedor de concesionario CUANDO ingreso la identificación del prospecto, DADO QUE el sistema opera normalmente QUIERO que el sistema me traiga toda su información PARA consultar el perfil y los intereses mostrados por el cliente anteriormente. ESTO DEBE suceder en menos de 1 segundos por campo. 
 
-## ASR2
+### ASR2
 COMO vendedor de concesionario CUANDO ingreso cada dato del prospecto, DADO QUE el sistema opera normalmente QUIERO crear lo más rápidamente posible la información del prospecto para dedicarme a la venta PARA poder presentar al cliente las bondades del vehículo y enviarlo luego a su correo. ESTO DEBE suceder en menos de 1 segundo por campo
 
-## ASR13
+### ASR13
 COMO Gerente de General de CCV CUANDO consulto uno de los KPIs de comportamiento de concesionarios y talleres para una marca específica, DADO QUE el sistema opera normalmente QUIERO ver la gráfica del KPI así como la información relacionada para poder definir tácticas por marca ESTO DEBE ser informado en menos de 1 minuto 
 
-## ASR25
+### ASR25
 COMO Subgerente de postventa CUANDO consulto el listado de existencias de repuestos y partes QUIERO obtener la información con alertas de stock mínimo PARA poder hacer el restock sin afectar ningún concesionario ESTO DEBE suceder en menos de 5 segundos
 
-## ASR26
+### ASR26
 COMO Subgerente de postventa CUANDO consulto el listado de existencias de repuestos y partes QUIERO obtener la información con alertas de stock mínimo PARA para poder hacer el restock sin afectar ningún concesionario ESTO DEBE presentarse con información dada por los talleres y que este actualizada hasta la última hora de la consulta 
 
-## ASR38
+### ASR38
 COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesionario, DADO QUE el sistema opera normalmente QUIERO ver la gráfica de tendencia actualizada hasta el momento de la consulta PARA aplicar promociones y campañas de mercadeo. ESTO DEBE presentarse con información dada por los concesionarios actualizada hasta la última hora de la consulta 
 
-# Estilo de Arquitectura 
+## Arquitectura propuesta
+
+### General
+
+A continuación se expone el resultado de aplicar las tácticas seleccionadas para favorecer la Latencia sobre la arquitectura base que el equipo desarrollo en el Sprint 0. Estas tiene por principal objetivo favorecer el rápido procesamiento de las archivos de postventa y las solicitudes de cotización de los diferentes vehículos que se exhiben en los concesionarios.
+
 ## LMAX
 Usaremos el estilo de arquitectura LMAX para las transacciones enviadas por los jefes de taller y los vendedores de concesionarios, que esperar una baja latencia pues están caminando con el cliente entre los vehículos o el taller
 
