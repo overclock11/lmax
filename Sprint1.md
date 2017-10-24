@@ -90,7 +90,6 @@ Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/punto
 
 ### Video del experimento
 Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
-[![Estilo de Arquitectura LMAX](https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Lmax-architecture.PNG)](https://drive.google.com/open?id=0BzuXVblyDImnSGZDQ3Rwb3N0WEk "Estilo de Arquitectura LMAX")
 
 ### Problema a Resolver
 
@@ -104,6 +103,8 @@ Estos dos ASR son de gran importancia ya que parte del éxito de ventas y flujo 
 ### Diseño del Experimento
 La parte crítica del diseño de este componente se encuentra en la recepción de las peticiones de los clientes web y móviles, estas deben ser procesadas rápidamente ya que en días de bastante ocupación es de gran criticidad una atención oportuna a los clientes.
 Se reciben peticiones REST que son atendidas por un componente de estilo arquitectural LMAX. Este permite procesar una gran cantidad de peticiones debido a la cola circular que utiliza lo cual permite que el sistema pueda atender múltiples peticiones en un solo thread de ejecución. 
+
+[![Estilo de Arquitectura LMAX](https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Lmax-architecture.PNG)](https://drive.google.com/open?id=0BzuXVblyDImnSGZDQ3Rwb3N0WEk "Estilo de Arquitectura LMAX")
 
 ### Implementación del Experimento
 La prueba fue diseñada para simular un usuario haciendo peticiones POST cada segundo durante un minuto.
