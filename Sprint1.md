@@ -88,9 +88,6 @@ Se tomó una decisión critica de diseño que consiste en usar el estilo de arqu
 ## Experimento
 Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/puntos%20de%20sensibilidad.mp4]]
 
-### Video del experimento
-Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
-
 ### Problema a Resolver
 
 Para el diseño presentado por el equipo se decidió realizar el experimento de latencia sobre los componentes de venta y postventa los cuales están relacionados con los siguientes ASR:
@@ -109,6 +106,7 @@ Se reciben peticiones REST que son atendidas por un componente de estilo arquite
 ### Implementación del Experimento
 La prueba fue diseñada para simular un usuario haciendo peticiones POST cada segundo durante un minuto.
 Con estas peticiones se pretende experimentar la latencia en la arquitectura seleccionada en este caso LMAX, cada petición está compuesta por un objeto JSON que es recibido por el sistema e insertado en la cola del input disruptor para ser procesado y generar una respuesta.
+Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
 
 ## Resultados
 Video: [[https://drive.google.com/open?id=0BzuXVblyDImnMGJMOW9OQkJfQlE]]
