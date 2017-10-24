@@ -7,8 +7,8 @@
    - [Tácticas de Arquitectura](#tácticas-de-arquitectura)
     - [Vistas](#vistas)
       - [Vista Funcional](#vista-funcional)
+      - [Vista de Información](#vista-de-información)
       - [Vista de Despliegue](#vista-de-despliegue)
-      - [Vista de Concurrencia](#vista-de-concurrencia)
 - [Puntos de Sensibilidad](#puntos-de-sensibilidad)
  - [Experimento](#experimento)
    - [Problema a Resolver](#problema-a-resolver)
@@ -23,9 +23,6 @@
 ## Introducción
 
 En el Sprint 1 el trabajo se enfocara en el atributo de calidad Latencia, para esto se realizo la priorización de una serie de ASR que se consideraron de gran importancia tanto para los Stakeholder como el diseño de la arquitectura. Se diseñara un experimento de arquitectura con el objetivo de validar la propuesta de diseño del equipo para satisfacer los ASR.
-
-# ASR Cubiertos en el Sprint 1: Latencia
-Estos ASR fueron clasificados y priorizados entre arquitectura y el grupo de Stakeholders según su nivel de riesgo. Ellos son:
 
 ## Requerimientos ASR
 
@@ -53,46 +50,50 @@ COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesi
 ## Arquitectura propuesta
 
 ### General
+A continuación se expone el resultado de aplicar los estilos y tácticas arquitecturales seleccionados para favorecer la Latencia sobre la arquitectura base que el equipo desarrollo en el Sprint 0. Estas tiene por principal objetivo favorecer el rápido procesamiento de las archivos de postventa y las solicitudes de cotización de los diferentes vehículos que se exhiben en los concesionarios.
 
-A continuación se expone el resultado de aplicar las tácticas seleccionadas para favorecer la Latencia sobre la arquitectura base que el equipo desarrollo en el Sprint 0. Estas tiene por principal objetivo favorecer el rápido procesamiento de las archivos de postventa y las solicitudes de cotización de los diferentes vehículos que se exhiben en los concesionarios.
+### Estilos de Arquitectura
 
-## LMAX
-Usaremos el estilo de arquitectura LMAX para las transacciones enviadas por los jefes de taller y los vendedores de concesionarios, que esperar una baja latencia pues están caminando con el cliente entre los vehículos o el taller
+#### LMAX
+Usaremos el estilo de arquitectura LMAX para las transacciones enviadas por los jefes de taller y los vendedores de concesionarios, los cuales esperan que el sistema responda rápidamente debido a que están caminando con el cliente entre los vehículos o el taller para poder concretar una venta o servicio postventa.
 
-## LAMBDA
+#### LAMBDA
 Usaremos el estilo de arquitectura LAMBDA para procesar los archivos en Batch de las ventas y las reparaciones en talleres por los volúmenes de información que llegara y la información en tiempo real que envíen los vendedores y jefes de taller como transacciones individuales en tiempo real. Con este estilo de arquitectura: Se procesará la información en Batch y se complementara con la información en tiempo real de modo que los principales Stakeholder tengan los KPI requeridos para la toma de decisiones con una visión fresca de los movimiento del mercado
 
-# Tácticas de Arquitectura 
-## Map Reduce
+### Tácticas de Arquitectura 
+
+#### Map Reduce
 Usaremos map reduce en el estilo Lambda para crear la capa batch ya que recibimos archivos de dos fuentes: Ventas y Postventas luego deben ser procesados y unidos basado en el cliente para tener una visión 360 del cliente: Lo que le interesa comprar, lo que realmente compro y el servicio que le da a su vehículo. También usaremos la táctica de map reduce en la capa de servicio de lambda para unir la información que viene de la capa Batch, con la información que viene de la capa Speed. 
 
-## Cache de Información
+#### Cache de Información
 Colocaremos la información de productos (vehículos, partes) en cache de forma que los procesos como Business Logic en LMAX y la capa de procesamiento de LAMBDA que consultan productos se vean beneficiados por la baja latencia ya que la información probablemente se encuentra en la memoria cache
 
-# Vistas
-## Component & Connector
-### Vista Funcional
+### Vistas
+
+#### Vista Funcional
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/VistaFuncionalLMAX-LAMBDA-MAPRED.png]]
 
-### Vista Información
+#### Vista de Información
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/VistaInformacion.png]]
 
-### Vista despliegue
+#### Vista de Despliegue
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama%20de%20despliegue.png]]
 
-# Puntos de Sensibilidad
-## Conocimiento de lo que sucede en los talleres y concesionarios: 
+## Puntos de Sensibilidad
 
-Se tomó una decisión critica de diseño que consiste en usar el estilo de arquitectura LAMBDA para procesamiento de información pero usando la capa "Speed" con arquitectura LMAX para que a la vez que se sirve a los vendedores y jefes de taller en cotizaciones, información de producto, complementa la información que requieren los directivos de CCV para el apoyo a la toma de desiciones. Ya que las directivas de CCV tienen problemas para saber que pasa realmente en concesionarios y talleres, pues en la actualidad esa información les llega con semanas de atraso lo que no les permite tomar decisiones con dicha información. CCV requiere procesar esa información y tenerla disponible para su uso en la toma de decisiones de manera oportuna
+### Conocimiento de lo que sucede en los talleres y concesionarios: 
 
+Se tomó una decisión critica de diseño que consiste en usar el estilo de arquitectura LAMBDA para procesamiento de información pero usando la capa "Speed" con arquitectura LMAX para que a la vez que se sirve a los vendedores y jefes de taller en cotizaciones, información de producto, complementa la información que requieren los directivos de CCV para el apoyo a la toma de desiciones. Ya que las directivas de CCV tienen problemas para saber que pasa realmente en concesionarios y talleres, pues en la actualidad esa información les llega con semanas de atraso lo que no les permite tomar decisiones con dicha información. CCV requiere procesar esa información y tenerla disponible para su uso en la toma de decisiones de manera oportuna.
 
+## Experimento
 Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/puntos%20de%20sensibilidad.mp4]]
 
 # Video del experimento
 Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/CCV-Sprint1.mp4]]
 [![Estilo de Arquitectura LMAX](https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Lmax-architecture.PNG)](https://drive.google.com/open?id=0BzuXVblyDImnSGZDQ3Rwb3N0WEk "Estilo de Arquitectura LMAX")
 
-# Resumen experimento
+### Problema a Resolver
+
 Para el diseño presentado por el equipo se decidió realizar el experimento de latencia sobre los componentes de venta y postventa los cuales están relacionados con los siguientes ASR:
 
 ASR1: Visualización de información de vehículos por parte de los vendedores en vitrina. Este ASR debe ejecutarse en un tiempo no mayor a 2 segundos.
@@ -100,11 +101,11 @@ ASR2: Creación de prospecto de compra de vehículo en el sistema, esto debe suc
 
 Estos dos ASR son de gran importancia ya que parte del éxito de ventas y flujo de ingresos de CCV depende del trabajo que los vendedores realizan en concesionarios con posibles cliente, todo esto apoyado en la plataforma tecnológica de la empresa. Esta información debe darse de forma rápida para poder atender la mayor cantidad de clientes posible y generar las mayores oportunidades de venta.
 
+### Diseño del Experimento
 La parte crítica del diseño de este componente se encuentra en la recepción de las peticiones de los clientes web y móviles, estas deben ser procesadas rápidamente ya que en días de bastante ocupación es de gran criticidad una atención oportuna a los clientes.
+Se reciben peticiones REST que son atendidas por un componente de estilo arquitectural LMAX. Este permite procesar una gran cantidad de peticiones debido a la cola circular que utiliza lo cual permite que el sistema pueda atender múltiples peticiones en un solo thread de ejecución. 
 
-Se reciben peticiones REST que son atendidas por un componente de estilo arquitectural LMAX. Este permite procesar una gran cantidad de peticiones debido a la cola circular que utiliza, lo cual hace que el sistema pueda atender múltiples peticiones en un solo thread de ejecución. 
-
-## Procedimiento
+### Implementación del Experimento
 La prueba fue diseñada para simular un usuario haciendo peticiones POST cada segundo durante un minuto.
 Con estas peticiones se pretende experimentar la latencia en la arquitectura seleccionada en este caso LMAX, cada petición está compuesta por un objeto JSON que es recibido por el sistema e insertado en la cola del input disruptor para ser procesado y generar una respuesta.
 
@@ -119,10 +120,7 @@ Gráfica de tiempos
 Estadísticas de tiempos
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/jmeter4.png]]
 
-
-
-
-
+### Análisis de Resultados y Respuesta al problema
 
 # Retrospectiva trabajo de equipo
 
