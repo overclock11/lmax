@@ -92,7 +92,7 @@ La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX 
 
 ### Cuestionamiento a Resolver
 
-Por medio de este experimento queremos eliminar la incertidumbre y validar el punto de sensibilidad de escalar LMAX replicando en HW y SW el componente de negocio BusinessLogic por medio de **auto-escalamiento** y **aumentando de los disruptores en capacidad** de forma que soporte **500 cotizaciones en ráfagas de X Segundos**
+Por medio de este experimento queremos eliminar la incertidumbre y validar el punto de sensibilidad de escalar LMAX replicando en HW y SW el componente de negocio BusinessLogic por medio de **auto-escalamiento** y **aumentando de los disruptores en capacidad** de forma que soporte **500 cotizaciones concurrentes**
 
 ### Diseño del Experimento
 El experimento se basa principalmente en validar los puntos de sensibilidad expuestos en la vista de despliegue basando la estrategia principalmente en: 
