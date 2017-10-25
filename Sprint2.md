@@ -92,9 +92,24 @@ La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX 
 
 ### Cuestionamiento a Resolver
 
-Por medio de este experimento queremos eliminar la incertidumbre y validar el punto de sensibilidad de escalar LMAX replicando en HW y SW el componente de negocio BusinessLogic por medio de auto-escalamiento y aumentando de los disruptores en capacidad de forma que soporte 500 cotizaciones en ráfagas de X Segundos
+Por medio de este experimento queremos eliminar la incertidumbre y validar el punto de sensibilidad de escalar LMAX replicando en HW y SW el componente de negocio BusinessLogic por medio de **auto-escalamiento** y **aumentando de los disruptores en capacidad** de forma que soporte **500 cotizaciones en ráfagas de X Segundos**
 
 ### Diseño del Experimento
+El experimento se basa principalmente en validar los puntos de sensibilidad expuestos en la vista de despliegue basando la estrategia principalmente en: 
+1) Auto-escalamiento del componente Business Logic tanto en HW como en SW
+2) Aumento de capacidad de los disruptores que redundan en escalamiento de HW
+La gráfica siguiente muestra los dos focos de atención del experimento:
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoEscalabilidad.png]]
+
+Los pasos para el experimento son:
+
+1) Aumentar el tamaño de los disruptores 
+2) Crea un grupo de escalamiento en AWS con un umbral de ejecucion
+3) Se adicionan nuevas maquinas a dicho grupo de escalamiento
+4) En cada maquina se lanza el proceso de BusinessLogic que inicia de inmediato lecturas de los disruptores
+5) Se va generando carga vía JMETER
+
+
 ### Implementación del Experimento
 ### Resultados
 ### Análisis de Resultados y Respuesta al problema
