@@ -107,10 +107,13 @@ Los pasos para el experimento son:
 2) Crea un grupo de escalamiento en AWS con un umbral de ejecucion
 3) Se adicionan nuevas maquinas a dicho grupo de escalamiento
 4) En cada maquina se lanza el proceso de BusinessLogic que inicia de inmediato lecturas de los disruptores
-5) Se va generando carga vía JMETER
-
+5) Se va generando carga aumentando en bloques de a 100 clientes concurrentes hasta encontrar el "Knee" punto de quiebre del sistema donde se dispara la qatencia a puntos no aceptables
+6) Validar que dicho "Knee" este por encima de las 500 cotizaciones concurrentes que es el evento que queremos validar con el presente experimento. 
 
 ### Implementación del Experimento
+
+La implementación del presente 
+
 ### Resultados
 ### Análisis de Resultados y Respuesta al problema
 
