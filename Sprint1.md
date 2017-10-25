@@ -47,7 +47,7 @@ COMO Subgerente de postventa CUANDO consulto el listado de existencias de repues
 ### ASR38
 COMO Subgerente de Ventas de CCV CUANDO pido el reporte de tendencia por concesionario, DADO QUE el sistema opera normalmente QUIERO ver la gráfica de tendencia actualizada hasta el momento de la consulta PARA aplicar promociones y campañas de mercadeo. ESTO DEBE presentarse con información dada por los concesionarios actualizada hasta la última hora de la consulta 
 
-## Arquitectura propuesta
+## Arquitectura Propuesta
 
 ### General
 A continuación se expone el resultado de aplicar los estilos y tácticas arquitecturales seleccionados para favorecer la Latencia sobre la arquitectura base que el equipo desarrollo en el Sprint 0. Estas tiene por principal objetivo favorecer el rápido procesamiento de las archivos de postventa y las solicitudes de cotización de los diferentes vehículos que se exhiben en los concesionarios.
