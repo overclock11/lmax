@@ -26,6 +26,19 @@ En el Sprint 2 el trabajo se enfocara en el atributo de calidad Escalabilidad, p
 
 ## Requerimientos ASR
 
+## Nota Inicial
+
+Para mayor entendimiento de los requerimientos críticos de arquitectura
+
+Cotización: Elemento de negocio que consta de un encabezado y un detalle. 
+
+Encabezado: Datos del cliente, total de la cotización
+Detalle: Datos del producto, cantidad, y monto de la línea
+
+El proceso completo nace con el vendedor de concesionario quien ingresa datos mínimos del cliente, y las referencias de el o los vehículos de interés del cliente.
+
+Al enviar la cotización, el sistema almacena el cliente si este no existe o complementa la información del mismo en la cotización, revisa producto por producto del detalle y adiciona el monto de cada linea de la cotización y por ultimo totaliza la cotización y envía de regreso al vendedor de concesionario
+
 ### ASR 11
 COMO Gerente de mercadeo CUANDO para las fechas especiales (Dias de la Madre, Fines de semana de feria), DADO QUE el sistema opera con sobrecarga QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 2 segundos, dado que hay 1000 vendedores adicionales para un total de 1500 con clientes simultáneamente haciendo cotizaciones. Se estima que 1/3 de los vendedores envían cotizaciones en el mismo momento.
 
@@ -77,7 +90,10 @@ La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX 
 
 ## Experimento
 
-### Problema a Resolver
+### Cuestionamiento a Resolver
+
+Por medio de este experimento queremos eliminar la incertidumbre y validar el punto de sensibilidad de escalar LMAX replicando en HW y SW el componente de negocio BusinessLogic por medio de auto-escalamiento y aumentando de los disruptores en capacidad de forma que soporte 500 cotizaciones en ráfagas de X Segundos
+
 ### Diseño del Experimento
 ### Implementación del Experimento
 ### Resultados
