@@ -86,7 +86,8 @@ Colocaremos la información de productos (vehículos, partes) en cache de forma 
 Se tomó una decisión critica de diseño que consiste en usar el estilo de arquitectura LAMBDA para procesamiento de información pero usando la capa "Speed" con arquitectura LMAX para que a la vez que se sirve a los vendedores y jefes de taller en cotizaciones, información de producto, complementa la información que requieren los directivos de CCV para el apoyo a la toma de desiciones. Ya que las directivas de CCV tienen problemas para saber que pasa realmente en concesionarios y talleres, pues en la actualidad esa información les llega con semanas de atraso lo que no les permite tomar decisiones con dicha información. CCV requiere procesar esa información y tenerla disponible para su uso en la toma de decisiones de manera oportuna.
 
 ## Experimento
-Video: [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Videos/puntos%20de%20sensibilidad.mp4]]
+Video - puntos de sensibilidad : https://youtu.be/U0onXpev9ak
+Video - experimento : https://youtu.be/cBwpvaNpJYc
 
 ### Problema a Resolver
 
