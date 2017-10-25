@@ -45,7 +45,7 @@ COMO Gerente de mercadeo CUANDO para las fechas especiales (Dias de la Madre, Fi
 ### ASR 14 
 COMO Gerente de mercadeo CUANDO diferentes concesionarios hacen campañas particularmente en fines de semana DADO QUE el sistema opera normalmente QUIERO poder registrar y dar respuesta a todas las cotizaciones hechas por los vendedores de concesionario ESTO DEBE suceder en menos de 1 segundos, dado que los requerimientos de cotizaciones sobre el sistema pueden aumentar entre un 10% y un 20% sin previo aviso dadas estas campañas sorpresa. En condiciones normales hay 500 vendedores accediendo el sistema, pero en ocasiones cuando se cruzan campañas en varios concesionarios los vendedores pueden aumentar entre 550 y 600 vendedores activos. Se estima que 1/3 de los vendedores envían cotizaciones en el mismo momento.
 
-## Arquitectura propuesta
+## Arquitectura Propuesta
 
 ### General
 La propuesta de arquitectura de este sprint comprende la unificación de las decisiones tomadas en el sprint 1 para favorecer la Latencia con las que el equipo ha tomado para favorecer la Escalabilidad. Las tácticas a aplicar tienen por objetivo el trabajar en conjunto con el estilo arquitectural LMAX para que el sistema se comporte de forma adecuada en momentos de gran estrés.
