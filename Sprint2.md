@@ -112,7 +112,18 @@ Los pasos para el experimento son:
 
 ### Implementación del Experimento
 
-La implementación del presente 
+#### Hardware y Software
+
+El Hardware y Software usado consta de:
+Aplicación: 
+1) NodeJS como Application Server
+2) Servicio de Amazon para base de datos (RDS)
+
+Todo montado en servidores cloud AWS 
+
+Simulación de Carga:
+1) New Relic como componente del servidor para la generación de métricas
+2) JMETER como cliente para simular la carga de trabajo
 
 ### Resultados
 ### Análisis de Resultados y Respuesta al problema
