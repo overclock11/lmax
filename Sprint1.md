@@ -120,7 +120,7 @@ Estadísticas de tiempos
 ### Análisis de Resultados y Respuesta al problema
 Como herramienta de medición de resultados utilizamos JMETER, la cual nos permitió obtener los valores de tiempo para las peticiones realizadas por el usuario. 
 De acuerdo a la gráfica de resultados, se obtuvo un tiempo mínimo de 30 ms y un tiempo máximo de 142 ms, esto garantiza que la arquitectura cumplirá con las expectativas de los stakeholder en cuanto a Latencia.
-Es por esto que concluimos que la decisiones arquitecturales tomadas cumplen con las expectativas de los stakeholder y por lo tanto
+Es por esto que concluimos que la decisiones arquitecturales tomadas cumplen con las expectativas de los stakeholder y por lo tanto no se modificara la arquitectura propuesta.
 
 # Retrospectiva trabajo de equipo
 
