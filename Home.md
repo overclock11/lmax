@@ -13,11 +13,17 @@ Arquitecto encargado del atributo de calidad Latencia
 #### Jorge Angel Perea Bescos 200623129
 
 Arquitecto encargado del atributo de calidad Seguridad
-https://github.com/MISO-4206/Grupo-6/wiki
+
 #### Ivan Ricardo Taimal Narvaez 201522369
+Arquitecto encargado del atributo de calidad Escalabilidad
+
+ <br/> <br/>
+Wiki del proyecto: <br/>
+[[https://github.com/MISO-4206/Grupo-6/wiki]]
 
 Url del proyecto en taiga: <br/>
-[https://tree.taiga.io/project/itaimal-miso_4206_grupo_6/]
+[[https://tree.taiga.io/project/itaimal-miso_4206_grupo_6/]]
+
 
 # Stakeholders
 [[Fichas persona]]
