@@ -99,7 +99,7 @@ El experimento se basa principalmente en validar los puntos de sensibilidad expu
 1) Auto-escalamiento del componente Business Logic tanto en HW como en SW
 2) Aumento de capacidad de los disruptores que redundan en escalamiento de HW
 La gráfica siguiente muestra los dos focos de atención del experimento:
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoEscalabilidad.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoEscalabilidad2.png]]
 
 Los pasos para el experimento son:
 
