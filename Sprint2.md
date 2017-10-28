@@ -146,4 +146,8 @@ Iteración 2
 ### Análisis de Resultados y Respuesta al problema
 
 ## Retrospectiva
+
+### Arquitectura y Puntos de Sensibilidad
+
+[Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/in9C1BXz-b0)
 ## Conclusiones
