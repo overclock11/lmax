@@ -132,9 +132,16 @@ Iteración 1
 
 La primera iteración del experimento solo replicamos el componente BusinessLogic y como resultado obtuvimos los resultados siguientes:
 
-El resultado no fue optimo para concurrencia de 500 cotizaciones concurrentemente puesto que se nos creo una situación de contención en los disruptores generando bloqueo de la cola y tiempos de espera de todos los BusinessLogic replicados mientras el BusinessLogic activo tomaba o insertaba en los disyuntores de entrada y salida.
+El resultado no fue optimo para concurrencia de 500 cotizaciones concurrentemente puesto que se nos creo una situación de contención en los disruptores generando bloqueo de la cola y tiempos de espera de todos los BusinessLogic replicados mientras el BusinessLogic activo tomaba o insertaba en los disruptores de entrada y salida. Adicionalmente apoyados con New Relic encontramos que había unos Queries sub-optimos a la base de datos que generaban aun mas contención. 
+Ver Gráfica:
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/NewRelicQueries.png]]
+
+
 
 RESULTADO: ****ITERACION 1 NO ACEPTABLE****
+
+Análisis
+ 
 
 Motivo por el cual redefinimos nuestro experimento:
 
