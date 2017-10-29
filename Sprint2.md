@@ -150,7 +150,7 @@ Modificamos los queries sub-optimos y ampliamos el grupo de escalamiento para qu
 
 
 ### Análisis de Resultados y Respuesta al problema
-
+[Video análisis de resultados](https://youtu.be/S7SSeBOhwp4)
 Para realizar pruebas en el experimento se planteó un set de pruebas en el que se mide la latencia promedio de la respuesta al guardar y calcular una cotización haciendo variación en el número de usuarios concurrentes entre 10, 50, 100, 200, 300, 400 y 500 usuarios concurrentes, siendo este último valor nuestro objetivo.
 Esta prueba se repitió para cada iteración agregando instancias del componente a replicar en el ambiente hasta 4 instancias replicadas.
 Se configuraron en el código un conjunto de eventos asociados a New Relic que permiten medir el tiempo y arrojar métricas de operaciones claves en los componentes.
