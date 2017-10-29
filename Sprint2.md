@@ -207,6 +207,8 @@ Para realizar un resumen se hace un contraste de lo sucedido a medida que se inc
 
 ### Arquitectura y Puntos de Sensibilidad
 
-[Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/in9C1BXz-b0)
-
-[Video Análisis de Resultados](https://youtu.be/wmXjBATY1Ag)
+[Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/in9C1BXz-b0)  
+[Video Diseño del Experimento](https://youtu.be/4BbXU__Jw0k)  
+[Video Herramientas Utilizadas para el Experimento](https://youtu.be/b58Z9O17Pqk)  
+[Video Código Desarrollado e Infraestructura](https://youtu.be/8y9qN3CfUj8)  
+[Video Análisis de Resultados](https://youtu.be/wmXjBATY1Ag)  
