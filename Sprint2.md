@@ -153,10 +153,54 @@ Modificamos los queries sub-optimos y ampliamos el grupo de escalamiento para qu
 
 ### Análisis de Resultados y Respuesta al problema
 
+Para realizar pruebas en el experimento se planteó un set de pruebas en el que se mide la latencia promedio de la respuesta al guardar y calcular una cotización haciendo variación en el número de usuarios concurrentes entre 10, 50, 100, 200, 300, 400 y 500 usuarios concurrentes, siendo este último valor nuestro objetivo.
+Esta prueba se repitió para cada iteración agregando instancias del componente a replicar en el ambiente hasta 4 instancias replicadas.
+Se configuraron en el código un conjunto de eventos asociados a New Relic que permiten medir el tiempo y arrojar métricas de operaciones claves en los componentes.
+```
+function processRequest() {   
+    let bgGetRequest = nr.createBackgroundTransaction('SalesBLProcessor:processRequest', function () {
+        getRequest(function (nextQueueElement) {
+            if (nextQueueElement && nextQueueElement.request) {
+                let quote = nextQueueElement.request;
+                quoteProvider.createOrUpdateCustomer(quote.customer);
+                buildQuoteDetail(quote, function (result) {
+                    pushResponse(quote, function () {
+                        nr.endTransaction();                      
+                    });
+                    saveQuote(quote,function (result) {                      
+                    });
+                });
+
+            }
+        });
+    });
+    bgGetRequest();
+}
+```
+
+###  Iteración 1
+ Se probó la arquitectura teniendo un único componente disruptor y replicando el componente Bussines Logic, se encontró que por problemas de contención en el componente disruptor la latencia pasaba a valores inaceptables al pasar los 50 usuarios concurrentes y tal como se mencionó anteriormente se descartó esa configuración.
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX1.PNG]]
+
+
+###  Iteración 2
+ Se probó la arquitectura replicando una instancia EC2 que contiene a todos los componentes de la arquitectura inicial,  Contoller, Disruptor y BusinessLogic, además se incluyó un balanceador de carga que permitiera distribuir las peticiones entre el número de instancias que se agreguen al grupo de escalamiento,  en esta prueba los resultados también fueron inaceptables, pero gracias a la instrumentación de New Relic se logró identificar que todas las inserciones tenían una verificación de registro incluido hecha a partir de un select lo cual generaba bloqueos en el acceso a la Base de Datos Postgres en RDS.
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX2.PNG]]
+
+
+###  Iteración 3
+Se corrige el problema identificado en la anterior iteración, los tiempos mejoran, pero debido a la comunicación entre los componentes al interior de cada instancia replicada, aún se mantienen tiempos de latencia que están en valores inaceptables.
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX3.PNG]]
+###  Iteración 4
+Buscando un comportamiento de referencia en una configuración diferente a las anteriores se realiza el set de pruebas sobre una arquitectura compuesta por un balanceador de carga y un conjunto de instancias en las cuales se realiza la misma operación de cálculo de cotización y su respectiva persistencia expuesto mediante servicio REST por cada una de las instancias.
+En este experimento variando la misma cantidad de instancias se logra obtener tiempos de latencia aceptables, pero modificando completamente la arquitectura inicialmente planteada.
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAXReferencia.PNG]]
+
+
+Para realizar un resumen se hace un contraste de lo sucedido a medida que se incrementaban instancias para cada uno de los casos, tal como se muestra en la siguiente imagen:
+
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/lmaxResumen.PNG]]
 ## Retrospectiva
 
