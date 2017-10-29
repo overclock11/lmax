@@ -208,3 +208,4 @@ Para realizar un resumen se hace un contraste de lo sucedido a medida que se inc
 ### Arquitectura y Puntos de Sensibilidad
 
 [Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/in9C1BXz-b0)
+[Video Análisis de Resultados](https://youtu.be/wmXjBATY1Ag)
