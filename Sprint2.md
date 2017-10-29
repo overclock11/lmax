@@ -150,7 +150,7 @@ Modificamos los queries sub-optimos y ampliamos el grupo de escalamiento para qu
 
 
 ### Análisis de Resultados y Respuesta al problema
-[Video análisis de resultados](https://youtu.be/S7SSeBOhwp4)
+
 
 Para realizar pruebas en el experimento se planteó un set de pruebas en el que se mide la latencia promedio de la respuesta al guardar y calcular una cotización haciendo variación en el número de usuarios concurrentes entre 10, 50, 100, 200, 300, 400 y 500 usuarios concurrentes, siendo este último valor nuestro objetivo.
 Esta prueba se repitió para cada iteración agregando instancias del componente a replicar en el ambiente hasta 4 instancias replicadas.
@@ -211,5 +211,6 @@ Para realizar un resumen se hace un contraste de lo sucedido a medida que se inc
 [Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/in9C1BXz-b0)  
 [Video Diseño del Experimento](https://youtu.be/4BbXU__Jw0k)  
 [Video Herramientas Utilizadas para el Experimento](https://youtu.be/b58Z9O17Pqk)  
-[Video Código Desarrollado e Infraestructura](https://youtu.be/8y9qN3CfUj8)  
+[Video Código Desarrollado e Infraestructura](https://youtu.be/8y9qN3CfUj8) 
+[Video Set de pruebas y toma de resultados](https://youtu.be/S7SSeBOhwp4) 
 [Video Análisis de Resultados](https://youtu.be/wmXjBATY1Ag)  
