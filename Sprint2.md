@@ -198,10 +198,13 @@ En este experimento variando la misma cantidad de instancias se logra obtener ti
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAXReferencia.PNG]]
 
 
-Para realizar un resumen se hace un contraste de lo sucedido a medida que se incrementaban instancias para cada uno de los casos, tal como se muestra en la siguiente imagen:
+Para realizar un resumen se hace un contraste de lo sucedido a medida que se incrementaban instancias para cada uno de los casos, estos fueron los resultados de la latencia promedio para 500 usuarios concurrentes:
 
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/lmaxResumen.PNG]]
+
+
+
 ## Retrospectiva
 
 ### Arquitectura y Puntos de Sensibilidad
