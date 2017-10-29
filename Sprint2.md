@@ -193,7 +193,7 @@ Se corrige el problema identificado en la anterior iteración, los tiempos mejor
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX3.PNG]]
 ###  Iteración 4
 Buscando un comportamiento de referencia en una configuración diferente a las anteriores se realiza el set de pruebas sobre una arquitectura compuesta por un balanceador de carga y un conjunto de instancias en las cuales se realiza la misma operación de cálculo de cotización y su respectiva persistencia expuesto mediante servicio REST por cada una de las instancias.
-En este experimento variando la misma cantidad de instancias se logra obtener tiempos de latencia aceptables, pero modificando completamente la arquitectura inicialmente planteada.
+En este experimento variando la misma cantidad de instancias se logra obtener tiempos de latencia aceptables, pero para ello fué necesario eliminar los disruptores de cada una de las instancias replicadas.
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAXReferencia.PNG]]
 
