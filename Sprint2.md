@@ -17,8 +17,6 @@
    - [Resultados](#resultados)
    - [Análisis de Resultados y Respuesta al problema](#análisis-de-resultados-y-respuesta-al-problema)
 - [Retrospectiva](#retrospectiva)
-- [Conclusiones](#conclusiones)
-
 
 ## Introducción
 
@@ -210,4 +208,3 @@ Para realizar un resumen se hace un contraste de lo sucedido a medida que se inc
 ### Arquitectura y Puntos de Sensibilidad
 
 [Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/in9C1BXz-b0)
-## Conclusiones
