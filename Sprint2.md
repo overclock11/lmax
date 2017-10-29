@@ -152,6 +152,11 @@ Modificamos los queries sub-optimos y ampliamos el grupo de escalamiento para qu
 
 
 ### Análisis de Resultados y Respuesta al problema
+
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX1.PNG]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX2.PNG]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAX3.PNG]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/LMAXReferencia.PNG]]
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/lmaxResumen.PNG]]
 ## Retrospectiva
 
