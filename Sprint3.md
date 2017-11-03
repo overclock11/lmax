@@ -37,9 +37,8 @@ El proceso completo nace con el vendedor de concesionario quien ingresa datos m�
 
 Al enviar la cotización, el sistema almacena el cliente si este no existe o complementa la información del mismo en la cotización, revisa producto por producto del detalle y adiciona el monto de cada linea de la cotización y por ultimo totaliza la cotización y envía de regreso al vendedor de concesionario
 
-### ASR XX
-
-### ASR XX 
+### ASR 5
+COMO Gerente de Ventas CUANDO un vendedor de concesionario en la feria del automóvil o día de la madre, DADO QUE el sistema opera con sobrecarga QUIERO que todas las cotizaciones sean respondidas por el sistema ya que en estas fechas la probabilidad de venta es tres veces mayor que en cualquier otra fecha del año PARA poder presentar al cliente rápidamente el precio y los descuentos del vehículo de su interés  ESTO DEBE ser respondido en menos de 2 segundos y el 99,999% de la veces lo cual quiere decir que en todo el fin de semana de feria solo se permite que 1 cotización no sea respondida o este sobre el tiempo aceptable de respuesta 
 
 ## Arquitectura Propuesta
 
@@ -47,28 +46,8 @@ Al enviar la cotización, el sistema almacena el cliente si este no existe o com
 La propuesta de arquitectura de este sprint comprende la unificación de las decisiones tomadas en el sprint 1 para favorecer la Latencia con las que el equipo ha tomado para favorecer la Escalabilidad. Las tácticas a aplicar tienen por objetivo el trabajar en conjunto con el estilo arquitectural LMAX para que el sistema se comporte de forma adecuada en momentos de gran estrés.
 
 ### Estilo de Arquitectura
-Por la descomposición dominante ya estamos comprometidos con los estilos de arquitectura
-
-#### LMAX 
-Para respuesta rapida a vendedores y jefes de taller.
-
-#### LAMBDA 
-Para proceso rapido de información de forma que las directivas de CCV puedan tomar decisiones 
 
 ### Tácticas de Arquitectura
-
-#### Scaling Out 
-Permitir auto-escalar instancias del Business Logic para procesar mas cotizaciones por unidad de tiempo 
-
-#### Replicación de componentes de negocio
-Replicar el componente de procesamiento de negocio y el catalogo de productos por región para poder cumplir con los picos de demanda
-
-#### Scaling Up
-Para aumentar la capacidad del HW que alberga los Disruptores de entrada y de salida para que puedan soportar el aumento en el tamaño de las colas de 200 a 500 para los días de la madre y ferias de vehículos
-200 slots para dias normales (Incluyendo los aumentos súbitos de demanda ASR14)
-a
-500 slots para el dia de la madre y feria automotriz
-Este aumento temporal de HW se debe realizar tres días antes del evento y durar hasta una semana después del evento dado que las promociones viven un poco mas que el evento (Pre-Feria, Post-Feria) (ASR11)
 
 ### Vistas
 
@@ -82,4 +61,8 @@ Este aumento temporal de HW se debe realizar tres días antes del evento y durar
 
 ## Puntos de Sensibilidad
 
-La decisión critica de diseño esta en combinar el estilo de arquitectura LMAX para garantizar el tiempo de respuesta con el autoescalamiento horizontal de HW y replicación de componentes de negocio en ese nuevo HW y aumento de la capacidad de los disruptores para poder reaccionar a los eventos especiales (Día de la madre, Feria del Automóvil), ya que estas generan un aumento considerable en la carga del sistema.
+La decisión critica de diseño está lograr una disponibilidad del 99,999% durante el fin de semana de la feria del automóvil y día de la madre, para esto debemos lograr que en caso de falla de uno de los componentes clave de la arquitectura como:
+El Business Logic
+El Catalogo de Productos
+El sub-sistema de clientes
+Esten disponibles y se puedan recupera sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en una cotización durante todo el evento
