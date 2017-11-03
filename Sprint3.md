@@ -49,6 +49,10 @@ La propuesta de arquitectura de este sprint comprende la unificación de las dec
 
 ### Tácticas de Arquitectura
 
+#### Táctica Software
+
+#### Táctica Hardware
+
 ### Vistas
 
 #### Vista Funcional
@@ -61,7 +65,7 @@ La propuesta de arquitectura de este sprint comprende la unificación de las dec
 
 ## Puntos de Sensibilidad
 
-La decisión critica de diseño está lograr una disponibilidad del 99,999% durante el fin de semana de la feria del automóvil y día de la madre, para esto debemos lograr que en caso de falla de uno de los componentes clave de la arquitectura como:
+La decisión critica de diseño está en lograr una disponibilidad del 99,999% durante el fin de semana de la feria del automóvil y día de la madre, para esto debemos lograr que en caso de falla de uno de los componentes clave bien sea de Software o de Hardware asociado de la arquitectura como:
 El Business Logic
 El Catalogo de Productos
 El sub-sistema de clientes
