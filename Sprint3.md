@@ -38,7 +38,7 @@ El proceso completo nace con el vendedor de concesionario quien ingresa datos m�
 Al enviar la cotización, el sistema almacena el cliente si este no existe o complementa la información del mismo en la cotización, revisa producto por producto del detalle y adiciona el monto de cada linea de la cotización y por ultimo totaliza la cotización y envía de regreso al vendedor de concesionario
 
 ### ASR 5
-COMO Gerente de Ventas CUANDO un vendedor de concesionario en la feria del automóvil o día de la madre, DADO QUE el sistema opera con sobrecarga QUIERO que todas las cotizaciones sean respondidas por el sistema ya que en estas fechas la probabilidad de venta es tres veces mayor que en cualquier otra fecha del año PARA poder presentar al cliente rápidamente el precio y los descuentos del vehículo de su interés  ESTO DEBE ser respondido en menos de 2 segundos y el 99,999% de la veces lo cual quiere decir que en todo el fin de semana de feria solo se permite que 1 cotización no sea respondida o este sobre el tiempo aceptable de respuesta 
+COMO Gerente de Ventas CUANDO un vendedor de concesionario en la feria del automóvil o día de la madre, DADO QUE el sistema opera con sobrecarga QUIERO que todas las cotizaciones sean respondidas por el sistema ya que en estas fechas la probabilidad de venta es tres veces mayor que en cualquier otra fecha del año PARA poder presentar al cliente rápidamente el precio y los descuentos del vehículo de su interés  ESTO DEBE ser respondido el 99,999% de la veces lo cual quiere decir que en todo el fin de semana de feria solo se permite que 0,001% de las cotizaciones en estado de falla 
 
 ## Arquitectura Propuesta
 
