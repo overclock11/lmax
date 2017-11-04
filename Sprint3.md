@@ -51,13 +51,29 @@ La propuesta de arquitectura de este sprint comprende la unificación de las dec
 
 #### Táctica Software
 
+##### Detect Faults - Monitor 
+Este monitor verifica cada x segundos que los componentes de BusinessLogic así como su HW asociado estén activos y en linea. Verifica tanto los BusinessLogic, como la conexión a la base de datos de productos y de clientes
+
+##### Caída Graciosa de los componentes
+El componente será extendido para que en caso de falla haga cierre formal de todos los recursos adquiridos, de forma que después de su caída el sistema quede en un estado adecuado y no vaya degradando paulatinamente el estado de salud general del sistema
+
 #### Táctica Hardware
+##### Recover from faults - Redundancia Activa
+Con el fin de garantizar la respuesta a los clientes, se usara la redundancia activa de 3 componentes de HW y SW del BusinessLogic de forma que en el evento de falla de uno o dos de ellos, el sistema siga funcional
+ 
+##### Reintroduction - State Resynchronization 
+Un elemento de BusinessLogic caído se re-inicia y empieza a operar en conjunto con la redundancia activa del punto anterior. Esta táctica va en conjunto con la redundancia activa y la caída graciosa del componente para que su reintroducción sea suave sin ir degradando el sistema bajo caídas sucesivas
+
+##### Load Balancing 
+Se usará el loadbalancer para que balancee las peticiones entre los componentes de BusinessLogic Activos 1 2 o 3 según lo especificado en la redundancia Activa
+
 
 ### Vistas
 
 #### Vista Funcional
 
 Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados con los componentes de BusinessLogic y la disponibilidad del catalogo de productos y el subistema de clientes.
+**Ver componentes y monitor de salud de componentes**
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.html.png]]
 
