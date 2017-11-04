@@ -57,7 +57,10 @@ La propuesta de arquitectura de este sprint comprende la unificación de las dec
 
 #### Vista Funcional
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/VistaFuncionalEscalamiento.png]]
+Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados con los componentes de BusinessLogic y la disponibilidad del catalogo de productos y el subistema de clientes.
+
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.html.png]]
+
 
 #### Vista de Despliegue
 
@@ -69,4 +72,4 @@ La decisión critica de diseño está en lograr una disponibilidad del 99,999% d
 El Business Logic
 El Catalogo de Productos
 El sub-sistema de clientes
-Esten disponibles y se puedan recupera sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en una cotización durante todo el evento
+Esten disponibles y se puedan recuperar sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en el 0,001% de las cotizaciones 
