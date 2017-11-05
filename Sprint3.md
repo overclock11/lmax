@@ -110,7 +110,7 @@ Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el
 
 ### Prueba del Experimento  
 
-Intencionalmente haremos fallar uno de los nodos de busineslogic y seguiremos enviando la carga al sistema de acuerdo al caso de negocio y medir los resultados de disponibilidad, luego haremos fallar dos de los componentes y repetiremos el experimento para validar que aun en esas condiciones podemos seguir operando
+Intencionalmente haremos fallar uno de los nodos de busineslogic y seguiremos enviando la carga al sistema de acuerdo al caso de negocio y medir los resultados de disponibilidad, luego haremos fallar dos de los componentes y repetiremos el experimento para validar que aun en esas condiciones podemos seguir operando. Estos nodos que caen debe reiniciarse por si solos y reintroducirse en el sistema sin afectar la operación 
 
 Por ultimo sacaremos por unos segundos la conexión al catálogo de productos y veremos el impacto a los nodos del BusinessLogic contando con que ellos tienen la información de productos en la memoria cache de cada nodo
 
@@ -130,6 +130,5 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilida
 
 
   
-
 
 
