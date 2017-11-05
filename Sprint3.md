@@ -89,3 +89,30 @@ El Business Logic
 El Catalogo de Productos
 El sub-sistema de clientes
 Esten disponibles y se puedan recuperar sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en el 0,001% de las cotizaciones 
+
+## Experimento
+
+Nuestro experimento consiste es probar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento
+
+### A nivel de Hardware
+Redundancia Activa: Iniciaremos con 3 componentes de HW y SW del BusinessLogic los cuales estarán recibiendo peticiones todo el tiempo
+
+LoadBalancing: Para distribuir las peticiones entre los 3 componentes de manera equitativa aun cuando algunos de ellos no están en linea en algún momento del tiempo
+
+### A nivel de Software
+
+Caída Graciosa de los Componentes: Atraparemos todas las excepciones para gestionarlas adecuadamente y además limpiar y cerrar todas las conexiones antes de caer para no degradar paulatinamente el sistema
+
+Monitor: Componente que valida el estatus tanto del Hardware como del Software asociado a los BusinessLogic y los componentes críticos asociados como la conexión a la base de datos de productos y de clientes. De forma que al notar una situación o posible causa de falla (Fault) el administrador pueda sacar el componente de linea y volver a introducirlo sin afectar al usuario final
+
+Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el catálogo por si solo es un punto de concurrencia y de falla de todo el sistema, sin acceso al catálogo de productos ningún proceso puede funcionar independientemente de los robustos que sean sus componentes de HW y SW. Por este motivo como el catálogo de productos en una entidad de información relativamente estática se puede replicar en memoria cache en cada uno de los nodos donde se ejecutan los BusinessLogic de forma que cada nodo del grupo de escalamiento sea autónomo en su ejecución (Ver Vista de Despliegue) 
+
+
+  
+
+
+
+
+
+
+
