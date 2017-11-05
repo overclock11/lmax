@@ -124,7 +124,7 @@ Como componente de SW adicional a los ya usados con los sprints anteriores:
 * RDS
 * LoadBalancer
 
-Adicionamos la herramienta de HappyApps.io para obtener medidas e información de fallos de la disponibilidad del sistema 
+Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilidad (99,999%) e información de fallos de la disponibilidad del sistema 
 * HappyApps.io
 
 
