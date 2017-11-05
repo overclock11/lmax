@@ -78,7 +78,7 @@ Desde un punto de vista funcional observamos que los puntos críticos en la disp
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.html.png]]
 
 
-#### Vista de Despliegue
+#### Vista de Despliegue (REEMPLAZAR)
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DespliegueEscalabilidad.png]]
 
@@ -105,13 +105,30 @@ Caída Graciosa de los Componentes: Atraparemos todas las excepciones para gesti
 
 Monitor: Componente que valida el estatus tanto del Hardware como del Software asociado a los BusinessLogic y los componentes críticos asociados como la conexión a la base de datos de productos y de clientes. De forma que al notar una situación o posible causa de falla (Fault) el administrador pueda sacar el componente de linea y volver a introducirlo sin afectar al usuario final
 
-Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el catálogo por si solo es un punto de concurrencia y de falla de todo el sistema, sin acceso al catálogo de productos ningún proceso puede funcionar independientemente de los robustos que sean sus componentes de HW y SW. Por este motivo como el catálogo de productos en una entidad de información relativamente estática se puede replicar en memoria cache en cada uno de los nodos donde se ejecutan los BusinessLogic de forma que cada nodo del grupo de escalamiento sea autónomo en su ejecución (Ver Vista de Despliegue) 
+Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el catálogo por si solo es un punto de concurrencia y de falla de todo el sistema, sin acceso al catálogo de productos ningún proceso puede funcionar independientemente de los robustos que sean sus componentes de HW y SW. Por este motivo como el catálogo de productos en una entidad de información relativamente estática se puede replicar en memoria cache en cada uno de los nodos donde se ejecutan los BusinessLogic de forma que cada nodo del grupo de escalamiento sea autónomo en su ejecución (Ver Vista de Despliegue)
+
+### Prueba del Experimento  
+
+Intencionalmente haremos fallar uno de los nodos de busineslogic y seguiremos enviando la carga al sistema de acuerdo al caso de negocio y medir los resultados de disponibilidad, luego haremos fallar dos de los componentes y repetiremos el experimento para validar que aun en esas condiciones podemos seguir operando
+
+Por ultimo sacaremos por unos segundos la conexión al catálogo de productos y veremos el impacto a los nodos del BusinessLogic contando con que ellos tienen la información de productos en la memoria cache de cada nodo
+
+### Hardware / SW usado
+
+Como componente de SW adicional a los ya usados con los sprints anteriores:
+* New Relic
+* JMeter
+* NodeJs
+* AWS
+* RDS
+* LoadBalancer
+
+Adicionamos la herramienta de HappyApps.io para obtener medidas e información de fallos de la disponibilidad del sistema 
+* HappyApps.io
+
 
 
   
-
-
-
 
 
 
