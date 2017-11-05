@@ -46,6 +46,7 @@ COMO Gerente de Ventas CUANDO un vendedor de concesionario en la feria del autom
 La propuesta de arquitectura de este sprint comprende la unificación de las decisiones tomadas en el sprint 1 para favorecer la Latencia con las que el equipo ha tomado para favorecer la Escalabilidad. Las tácticas a aplicar tienen por objetivo el trabajar en conjunto con el estilo arquitectural LMAX para que el sistema se comporte de forma adecuada en momentos de gran estrés.
 
 ### Estilo de Arquitectura
+Por descomposición dominante nuestros estilos de arquitectura continuar siendo LMAX y LAMBDA definida en el Sprint 1
 
 ### Tácticas de Arquitectura
 
@@ -129,7 +130,6 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas e información d
 
 
   
-
 
 
 
