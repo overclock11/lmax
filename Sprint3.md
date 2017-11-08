@@ -79,7 +79,7 @@ Desde un punto de vista funcional observamos que los puntos críticos en la disp
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.html.png]]
 
 
-#### Vista de Despliegue (REEMPLAZAR)
+#### Vista de Despliegue
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama despliegue Sprint 3.png]]
 
