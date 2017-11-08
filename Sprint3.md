@@ -81,7 +81,7 @@ Desde un punto de vista funcional observamos que los puntos críticos en la disp
 
 #### Vista de Despliegue (REEMPLAZAR)
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DespliegueEscalabilidad.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama despliegue Sprint 3.png]]
 
 ## Puntos de Sensibilidad
 
