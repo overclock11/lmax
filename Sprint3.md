@@ -17,6 +17,8 @@
    - [Resultados](#resultados)
    - [Análisis de Resultados y Respuesta al problema](#análisis-de-resultados-y-respuesta-al-problema)
 - [Retrospectiva](#retrospectiva)
+ - [Aspectos Positivos del Sprint y del Equipo](#aspectos-positivos-del-sprint-y-del-equipo)
+ - [Aspectos a Mejorar del Sprint y del Equipo](#aspectos-a-mejorar-del-sprint-y-del-equipo)
 
 ## Introducción
 
