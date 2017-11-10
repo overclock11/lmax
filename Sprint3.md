@@ -135,3 +135,7 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilida
 ## Análisis de Resultados y Respuesta al problema
   
 ## Retrospectiva
+
+[Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/T1p-Afn1xjs)  
+
+[Video Diseño del Experimento](https://youtu.be/X0nGhSMfRyQ) 
