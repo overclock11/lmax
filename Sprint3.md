@@ -93,7 +93,10 @@ Esten disponibles y se puedan recuperar sin intervención humana todo el tiempo 
 
 ## Experimento
 
+## Problema a Resolver
 Nuestro experimento consiste es probar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento
+
+## Diseño del Experimento
 
 ### A nivel de Hardware
 Redundancia Activa: Iniciaremos con 3 componentes de HW y SW del BusinessLogic los cuales estarán recibiendo peticiones todo el tiempo
@@ -127,8 +130,8 @@ Como componente de SW adicional a los ya usados con los sprints anteriores:
 Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilidad (99,999%) e información de fallos de la disponibilidad del sistema 
 * HappyApps.io
 
+## Resultados
 
-
+## Análisis de Resultados y Respuesta al problema
   
-
-
+## Retrospectiva
