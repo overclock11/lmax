@@ -94,7 +94,7 @@ Esten disponibles y se puedan recuperar sin intervención humana todo el tiempo 
 ## Experimento
 
 ## Problema a Resolver
-Nuestro experimento consiste es probar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento
+Nuestro experimento consiste en asegurar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento.
 
 ## Diseño del Experimento
 
