@@ -167,6 +167,8 @@ Sobre los 30 segundos que se repartieron las 500 peticiones, se lograron satisfa
 Ademas mediante el uso de happyApps monitoreamos la disponibilidad del servicio durante el experimento, lo cual demostró que a pesar de las caídas programadas de los componentes de Business Logic, el servicio siempre estuvo disponible para atender todas las peticiones simuladas.
 
 ## Análisis de Resultados y Respuesta al problema
+
+A lo largo del experimento pudimos observar que la d
   
 ## Retrospectiva
 
