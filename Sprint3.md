@@ -134,6 +134,11 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilida
 
 ## Resultados
 
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Sprnt3-exp.png]]
+
+Para la primera iteración del experimento se obtuvieron resultados satisfactorios, para esta se utilizó la configuración expuesta y se obtuvieron los siguientes resultados
+
+
 ## Análisis de Resultados y Respuesta al problema
   
 ## Retrospectiva
