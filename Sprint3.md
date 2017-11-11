@@ -153,7 +153,7 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilida
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Sprnt3-exp.png]]
 
-Para la primera iteración del experimento se obtuvieron resultados satisfactorios, para esta se utilizó la configuración expuesta anteriormente de 3 instancias activas de business logic encargadas de atender las peticiones. Cada una de estas instancias sufrió una caída programada con el fin de medir el nivel de respuesta del sistema ante este tipo de situaciones.
+Para la primera iteración del experimento se obtuvieron resultados satisfactorios, para esta se utilizó la configuración expuesta anteriormente de 3 instancias, bajo redundancia activa, las cuales estan encargadas de atender las peticiones. Cada una de estas instancias sufrió una caída programada y fueron reintroducidas con EPM2, esto con el fin de medir el nivel de respuesta del sistema ante este tipo de situaciones.
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (2).PNG]]
 
