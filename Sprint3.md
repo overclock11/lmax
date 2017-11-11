@@ -176,6 +176,8 @@ A lo largo del experimento pudimos observar que la d
 
 [Video Diseño del Experimento](https://youtu.be/X0nGhSMfRyQ) 
 
+[Video Resultados del Experimento](https://youtu.be/c_mXIl2CUkc) 
+
 ## Aspectos Positivos del Sprint y del Equipo
 
 En este sprint desde el punto de vista del equipo con la dinámica que trajimos del sprint 2 el equipo fluyó mayor sincronía, y asertividad. 
