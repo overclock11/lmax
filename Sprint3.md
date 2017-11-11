@@ -168,8 +168,9 @@ Ademas mediante el uso de happyApps monitoreamos la disponibilidad del servicio 
 
 ## Análisis de Resultados y Respuesta al problema
 
-A lo largo del experimento pudimos observar que la d
-  
+Para el experimento solo se realizó una iteración puesto que se observo un comportamiento favorable del sistema bajo las condiciones establecidas para dar visto buenos a las decisiones arquitecturales. Desde la perspectiva de hardware son de gran importancia la redundancia activa y la re sincronización de componentes pues estos nos permitirán en gran medida responder a las peticiones bajo condiciones difíciles. Por el lado de software el monitoreo de los componentes es crucial y seria importante el poder involucrar un sistema de alertas en el futuro para complementar el esquema definido. 
+
+Dado los resultados positivos, con una media de atención de 375 ms consideramos que las desiciones arquitecturales tomadas son correctas y no se realizaran cambios a la propuesta. 
 ## Retrospectiva
 
 [Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/T1p-Afn1xjs)  
