@@ -99,6 +99,7 @@ Esten disponibles y se puedan recuperar sin intervención humana todo el tiempo 
 Nuestro experimento consiste en asegurar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento.
 
 ## Diseño del Experimento
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoDisponibilidad.PNG]]
 
 ### A nivel de Hardware
 Redundancia Activa: Iniciaremos con 3 componentes de HW y SW del BusinessLogic los cuales estarán recibiendo peticiones todo el tiempo
@@ -131,7 +132,7 @@ getProduct = function (productId, done) {
 ```
 
 ### Prueba del Experimento  
-
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoDisponibilidad2.PNG]]
 Intencionalmente haremos fallar uno de los nodos de busineslogic y seguiremos enviando la carga al sistema de acuerdo al caso de negocio y medir los resultados de disponibilidad, luego haremos fallar dos de los componentes y repetiremos el experimento para validar que aun en esas condiciones podemos seguir operando. Estos nodos que caen debe reiniciarse por si solos y reintroducirse en el sistema sin afectar la operación 
 
 Por ultimo sacaremos por unos segundos la conexión al catálogo de productos y veremos el impacto a los nodos del BusinessLogic contando con que ellos tienen la información de productos en la memoria cache de cada nodo
@@ -151,8 +152,8 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilida
 
 ## Resultados
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Sprnt3-exp.png]]
 
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoDisponibilidad3.PNG]]
 Para la primera iteración del experimento se obtuvieron resultados satisfactorios, para esta se utilizó la configuración expuesta anteriormente de 3 instancias, bajo redundancia activa, las cuales estan encargadas de atender las peticiones. Cada una de estas instancias sufrió una caída programada y fueron reintroducidas con EPM2, esto con el fin de medir el nivel de respuesta del sistema ante este tipo de situaciones.
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (2).PNG]]
