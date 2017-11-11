@@ -114,7 +114,7 @@ Monitor: Componente que valida el estatus tanto del Hardware como del Software a
 Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el catálogo por si solo es un punto de concurrencia y de falla de todo el sistema, sin acceso al catálogo de productos ningún proceso puede funcionar independientemente de los robustos que sean sus componentes de HW y SW. Por este motivo como el catálogo de productos en una entidad de información relativamente estática se puede replicar en memoria cache en cada uno de los nodos donde se ejecutan los BusinessLogic de forma que cada nodo del grupo de escalamiento sea autónomo en su ejecución (Ver Vista de Despliegue)
 
 El siguiente método muestra como se obtiene la información del producto desde cache o desde la DB cuando la info no se a cargado.
-```
+```javascript
 getProduct = function (productId, done) {
     let key = "product/" + productId;
     cacheManager.get(key, function (product) {
