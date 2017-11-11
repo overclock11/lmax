@@ -138,13 +138,13 @@ Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilida
 
 Para la primera iteración del experimento se obtuvieron resultados satisfactorios, para esta se utilizó la configuración expuesta anteriormente de 3 instancias activas de business logic encargadas de atender las peticiones. Cada una de estas instancias sufrió una caída programada con el fin de medir el nivel de respuesta del sistema ante este tipo de situaciones.
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (2).png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (2).PNG]]
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (3).png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (3).PNG]]
 
 Sobre los 30 segundos que se repartieron las 500 peticiones, se lograron satisfacer todas las peticiones y lograr una media de 375 ms.
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (4).png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (4).PNG]]
 
 Ademas mediante el uso de happyApps monitoreamos la disponibilidad del servicio durante el experimento, lo cual demostró que a pesar de las caídas programadas de los componentes de Business Logic, el servicio siempre estuvo disponible para atender todas las peticiones simuladas.
 
