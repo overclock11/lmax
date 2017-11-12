@@ -108,9 +108,9 @@ LoadBalancing: Para distribuir las peticiones entre los 3 componentes de manera 
 
 ### A nivel de Software
 
-Caída Graciosa de los Componentes: Atraparemos todas las excepciones para gestionarlas adecuadamente y además limpiar y cerrar todas las conexiones antes de caer para no degradar paulatinamente el sistema
+Caída Graciosa de los Componentes: Atraparemos todas las excepciones para gestionarlas adecuadamente y además informar del hecho mediante el envío de un mensaje a una cola asíncrona que se comunica con los monitores para su seguimiento y control. Además limpiar y cerrar todas las conexiones antes de caer para no degradar paulatinamente el sistema
 
-Monitor: Componente que valida el estatus tanto del Hardware como del Software asociado a los BusinessLogic y los componentes críticos asociados como la conexión a la base de datos de productos y de clientes. De forma que al notar una situación o posible causa de falla (Fault) el administrador pueda sacar el componente de linea y volver a introducirlo sin afectar al usuario final
+Monitor: Componente que valida el estatus tanto del Hardware como del Software asociado a los BusinessLogic y los componentes críticos asociados como la conexión a la base de datos de productos y de clientes. De forma que al notar una situación o posible causa de falla (Fault) el administrador pueda sacar el componente de linea y volver a introducirlo sin afectar al usuario final. También este componente es responsable de recibir y gestionar los mensajes de caída de los componentes y registrarlo en la base da datos para análisis de fallas del sistema.
 
 Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el catálogo por si solo es un punto de concurrencia y de falla de todo el sistema, sin acceso al catálogo de productos ningún proceso puede funcionar independientemente de los robustos que sean sus componentes de HW y SW. Por este motivo como el catálogo de productos en una entidad de información relativamente estática se puede replicar en memoria cache en cada uno de los nodos donde se ejecutan los BusinessLogic de forma que cada nodo del grupo de escalamiento sea autónomo en su ejecución (Ver Vista de Despliegue)
 
