@@ -55,10 +55,10 @@ Por descomposición dominante nuestros estilos de arquitectura continuar siendo 
 #### Táctica Software
 
 ##### Detect Faults - Monitor 
-Este monitor verifica cada x segundos que los componentes de BusinessLogic así como su HW asociado estén activos y en linea. Verifica tanto los BusinessLogic, como la conexión a la base de datos de productos y de clientes
+Este monitor verifica cada x segundos que los componentes de BusinessLogic así como su HW asociado estén activos y en linea. Verifica tanto los BusinessLogic, como la conexión a la base de datos de productos y de clientes. También recibe el error de los componentes en caso de falla y lo registra en la base de datos para seguimiento.
 
 ##### Caída Graciosa de los componentes
-El componente será extendido para que en caso de falla haga cierre formal de todos los recursos adquiridos, de forma que después de su caída el sistema quede en un estado adecuado y no vaya degradando paulatinamente el estado de salud general del sistema
+El componente será extendido para que en caso de falla haga cierre formal de todos los recursos adquiridos, de forma que después de su caída el sistema quede en un estado adecuado y no vaya degradando paulatinamente el estado de salud general del sistema. Además de informar el error al monitor de fallas para registro y seguimiento.
 
 #### Táctica Hardware
 ##### Recover from faults - Redundancia Activa
@@ -91,7 +91,7 @@ La decisión critica de diseño está en lograr una disponibilidad del 99,999% d
 El Business Logic
 El Catalogo de Productos
 El sub-sistema de clientes
-Esten disponibles y se puedan recuperar sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en el 0,001% de las cotizaciones 
+Se lleve un seguimiento de la caída vía los monitores y que estos a su vez estén disponibles y se puedan recuperar sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en el 0,001% de las cotizaciones. 
 
 ## Experimento
 
