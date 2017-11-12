@@ -78,7 +78,7 @@ Se usará el loadbalancer para que balancee las peticiones entre los componentes
 Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados con los componentes de BusinessLogic y la disponibilidad del catalogo de productos y el subistema de clientes.
 **Ver componentes y monitor de salud de componentes**
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.html.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.png]]
 
 
 #### Vista de Despliegue
