@@ -76,7 +76,7 @@ Se usará el loadbalancer para que balancee las peticiones entre los componentes
 #### Vista Funcional
 
 Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados con los componentes de BusinessLogic y la disponibilidad del catalogo de productos y el subistema de clientes.
-**Ver componentes y monitor de salud de componentes. Círculo Azul**. El monitor de saludo usa una táctica de arquitectura Echo - Ping a los diferentes componentes y ademas tiene como función recibir los errores de los componentes y registrarlos en la base de datos
+**Ver componentes y monitor de salud de componentes. Círculo Azul**. El monitor de saludo usa una táctica de arquitectura Echo - Ping a los diferentes componentes y además tiene como función recibir los errores de los componentes y registrarlos en la base de datos
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.png]]
 
