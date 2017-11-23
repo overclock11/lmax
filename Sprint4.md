@@ -26,19 +26,6 @@ En el Sprint 4 el trabajo se enfocara en el atributo de calidad Seguridad, para 
 
 ## Requerimientos ASR
 
-## Nota Inicial
-
-Para mayor entendimiento de los requerimientos críticos de arquitectura
-
-Cotización: Elemento de negocio que consta de un encabezado y un detalle. 
-
-Encabezado: Datos del cliente, total de la cotización
-Detalle: Datos del producto, cantidad, y monto de la línea
-
-El proceso completo nace con el vendedor de concesionario quien ingresa datos mínimos del cliente, y las referencias de el o los vehículos de interés del cliente.
-
-Al enviar la cotización, el sistema almacena el cliente si este no existe o complementa la información del mismo en la cotización, revisa producto por producto del detalle y adiciona el monto de cada linea de la cotización y por ultimo totaliza la cotización y envía de regreso al vendedor de concesionario
-
 ### ASR 20
 COMO Gerente de Postventa CUANDO un centro de servicio envía el archivo con información de los servicios y reparaciones hechos a sus clientes QUIERO que la información este segura y no caiga en manos no autorizadas en ningún punto el proceso PARA garantizar que la información de clientes y reparaciones solos sea usada para el beneficio de nuestros clientes y de CCV DADO que el sistema opera normalmente ESTO DEBE suceder el 100% de las veces ya que hemos detectado que personal interno o externo ha podido obtener acceso no autorizado a dicha información y contactado a los clientes para llevarlos a centros de servicio no autorizados disminuyendo los ingresos de CCV y de los concesionarios
 
