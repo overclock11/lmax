@@ -83,6 +83,8 @@ Del anterior árbol de ataque podemos empezar a inferir los recursos vulnerables
 Y probablemente la principal brecha de seguridad esta el control que tiene CCV del manejo de credenciales, así como la falta de conocimiento o divulgación de las políticas de seguridad. 
 Tampoco tiene un conjunto de reglas de seguridad por defecto.
 
+Como antecedentes históricos de CCV en varias ocasiones empleados internos de CCV o de los concesionarios han tenido acceso no autorizado a la información de los clientes para montar talleres no autorizados con repuestos traídos de la China y contactan los clientes para prometerles un precio menor y servicio equivalente. 
+
 ## Arquitectura Propuesta
 
 ### General
