@@ -73,7 +73,8 @@ Se lleve un seguimiento de la caída vía los monitores y que estos a su vez est
 ## Experimento
 
 ## Problema a Resolver
-Nuestro experimento consiste en asegurar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento.
+Nuestro experimento consiste en asegurar la informacion del sistema tanto en el transporte como en el almacenamiento  para que no pueda ser interceptada por personas externas o internas que de forma no autorizada quieran acceder a ella.
+Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 
 ## Diseño del Experimento
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
