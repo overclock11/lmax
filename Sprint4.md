@@ -76,7 +76,7 @@ Se lleve un seguimiento de la caída vía los monitores y que estos a su vez est
 Nuestro experimento consiste en asegurar la disponibilidad del ambiente especialmente en sobrecarga en la feria del automóvil. En tal fecha la disponibilidad debe ser del 99,999% por tal motivo efectuaremos ajustes tanto de HW como de SW para garantizar dicho requerimiento.
 
 ## Diseño del Experimento
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoDisponibilidad.PNG]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
 ### A nivel de Hardware
 Redundancia Activa: Iniciaremos con 3 componentes de HW y SW del BusinessLogic los cuales estarán recibiendo peticiones todo el tiempo
