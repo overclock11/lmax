@@ -115,12 +115,7 @@ Desde un punto de vista funcional observamos que los puntos críticos en la disp
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama despliegue Sprint 3.png]]
 
 ## Puntos de Sensibilidad
-
-La decisión critica de diseño está en lograr una disponibilidad del 99,999% durante el fin de semana de la feria del automóvil y día de la madre, para esto debemos lograr que en caso de falla de uno de los componentes clave bien sea de Software o de Hardware asociado de la arquitectura como:
-El Business Logic
-El Catalogo de Productos
-El sub-sistema de clientes
-Se lleve un seguimiento de la caída vía los monitores y que estos a su vez estén disponibles y se puedan recuperar sin intervención humana todo el tiempo ya que por los requerimientos de los stakeholders solo podemos fallar en el 0,001% de las cotizaciones. 
+La decisión critica de diseño está en lograr asegurar la información sensible del cliente en su transmisión y su almacenamiento de ataques tanto externos como internos tanto en los canales de transmisión como en la aplicación y en la base de datos, a la vez que requerimos mantener dentro de limites aceptables los atributos de calidad de latencia, escalabilidad y disponibilidad
 
 ## Experimento
 
