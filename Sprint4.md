@@ -32,6 +32,30 @@ COMO Gerente de Postventa CUANDO un centro de servicio envía el archivo con inf
 ### ASR 21
 COMO Gerente de Postventa CUANDO la información de nuestros clientes y sus detalles de contacto y vehículo se encuentre en las bases de datos de CCV QUIERO que la información este segura y no caiga en manos no autorizadas en ningún punto el proceso PARA garantizar que la información de clientes y reparaciones solos sea usada para el beneficio de nuestros clientes y de CCV DADO que el sistema opera normalmente ESTO DEBE suceder el 100% de las veces ya que hemos detectado que personal interno ha podido obtener acceso no autorizado a archivos o bases de datos y contactado a los clientes para llevarlos a centros de servicio no autorizados disminuyendo los ingresos de CCV y de los concesionarios
 
+## Arbol de Ataque
+Objetivo: Obtener la información de contacto del cliente de CCV
+1. Extrae los detalles de la base de datos directamente
+  1.1 Acceder la base de datos directamente
+    1.1.1 El atacante tiene una cuenta de base de datos antigua
+    1.1.2 El atacante tiene acceso a las cuentas del servidor y por ahí accede la base de datos
+  1.2 Accede la base de datos vía el password de uno de los miembros del staff
+    1.2.1 El atacante obtuvo el usuario y pwd de AWS y RDS de unos de los empleados por medio de mail o en algún archivo
+2. Extrae los detalles del archivo trasmitido por los concesionarios y talleres
+  2.1 Accede a través de un comprador del la fuente (Concesionario y Taller)
+    2.1.1 El atacante toma el archivo de clientes de uno de los computadores
+  2.2 Toma el archivo cuando es trasmitido a CCV
+    2.2.1 El atacante toma el archivo del canal de transmisión 
+    2.2.2 El atacante toma el archivo cuando llega a CCV e inicia el proceso
+    2.2.3 El atacante toma el archivo del file system del servidor de AWS
+3. Extrae los detalles de cada una de las cotizaciones enviadas por los vendedores
+  3.1 Atacando el canal
+   3.1.1 El Atacante usa sniffers en el canal de transmision
+   3.1.2 El Atacante intercepta el mensaje antes de que salga del Concesionario o taller
+  3.2 Atacando el modulo de ventas
+   3.2.1 El atacante tiene usuario / Password del sistema de ventas y postventas
+   3.2.2 El atacante usa las credenciales de otro usuario por medio de suplantación 
+   3.2.3 El atacante obtuvo el usuario y pwd de AWS y RDS de unos de los empleados por medio de mail o en algún archivo
+
 
 ## Arquitectura Propuesta
 
