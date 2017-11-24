@@ -37,45 +37,51 @@ Objetivo: Obtener la información de contacto del cliente de CCV
 1. Extrae los detalles de la base de datos directamente  
    1.1 Acceder la base de datos directamente
     
-    1.1.1 El atacante tiene una cuenta de base de datos antigua
+       1.1.1 El atacante tiene una cuenta de base de datos antigua
 
-    1.1.2 El atacante tiene acceso a las cuentas del servidor y por ahí accede la base de datos
+       1.1.2 El atacante tiene acceso a las cuentas del servidor y por ahí accede la base de datos
 
-  1.2 Accede la base de datos vía el password de uno de los miembros del staff
+   1.2 Accede la base de datos vía el password de uno de los miembros del staff
 
-    1.2.1 El atacante obtuvo el usuario y pwd de AWS y RDS de unos de los empleados por medio de mail o en algún archivo
+       1.2.1 El atacante obtuvo el usuario y pwd de AWS y RDS de unos de los empleados por medio de mail o en algún archivo
 
 2. Extrae los detalles del archivo trasmitido por los concesionarios y talleres
 
-  2.1 Accede a través de un comprador del la fuente (Concesionario y Taller)
+   2.1 Accede a través de un comprador del la fuente (Concesionario y Taller)
 
-    2.1.1 El atacante toma el archivo de clientes de uno de los computadores
+       2.1.1 El atacante toma el archivo de clientes de uno de los computadores
 
-  2.2 Toma el archivo cuando es trasmitido a CCV
+   2.2 Toma el archivo cuando es trasmitido a CCV
 
-    2.2.1 El atacante toma el archivo del canal de transmisión
+       2.2.1 El atacante toma el archivo del canal de transmisión
  
-    2.2.2 El atacante toma el archivo cuando llega a CCV e inicia el proceso
+       2.2.2 El atacante toma el archivo cuando llega a CCV e inicia el proceso
 
-    2.2.3 El atacante toma el archivo del file system del servidor de AWS
+       2.2.3 El atacante toma el archivo del file system del servidor de AWS
 
 3. Extrae los detalles de cada una de las cotizaciones enviadas por los vendedores
 
-  3.1 Atacando el canal
+   3.1 Atacando el canal
 
-   3.1.1 El Atacante usa sniffers en el canal de transmision
+        3.1.1 El Atacante usa sniffers en el canal de transmision
 
-   3.1.2 El Atacante intercepta el mensaje antes de que salga del Concesionario o taller
+        3.1.2 El Atacante intercepta el mensaje antes de que salga del Concesionario o taller
 
-  3.2 Atacando el modulo de ventas
+   3.2 Atacando el modulo de ventas
 
-   3.2.1 El atacante tiene usuario / Password del sistema de ventas y postventas
+       3.2.1 El atacante tiene usuario / Password del sistema de ventas y postventas
 
-   3.2.2 El atacante usa las credenciales de otro usuario por medio de suplantación
+       3.2.2 El atacante usa las credenciales de otro usuario por medio de suplantación
  
-   3.2.3 El atacante obtuvo el usuario y pwd de AWS y RDS de unos de los empleados por medio de mail o en algún archivo
+       3.2.3 El atacante obtuvo el usuario y pwd de AWS y RDS de unos de los empleados por medio de mail o en algún archivo
 
+Del anterior árbol de ataque podemos empezar a inferir los recursos vulnerables de la aplicación como son:
+1. La base de datos de clientes
+2. El archivo trasmitido por el taller o concesionario 
+3. Accedo directo a la aplicación
 
+Y probablemente la principal brecha de seguridad esta el control que tiene CCV del manejo de credenciales, así como la falta de conocimiento o divulgación de las políticas de seguridad. 
+Tampoco tiene un conjunto de reglas de seguridad por defecto.
 
 ## Arquitectura Propuesta
 
