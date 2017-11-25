@@ -132,13 +132,20 @@ Nuestro experimento consiste en asegurar la informacion del sistema tanto en el 
 Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 
 ## Diseño del Experimento
+
+### Propósito
+### Resultados esperados
+### Recursos requeridos
+### Elementos de arquitectura involucrados
+### Esfuerzo estimado
+### Resultados
+### Acciones a seguir
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/SecuritySetOfTests.PNG]]
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
-### A nivel de Hardware
 
-### A nivel de Software
 
 ### Prueba del Experimento  
 #### Prueba 1- Cross Site Request Forgery
