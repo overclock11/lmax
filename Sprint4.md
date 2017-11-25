@@ -139,6 +139,7 @@ Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 ### A nivel de Software
 
 ### Prueba del Experimento  
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/CrossSiteRequestForgery.PNG]]
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
 ### Hardware / SW usado
