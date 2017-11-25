@@ -112,6 +112,8 @@ Aun cuando los canales son asegurados usando HTTPS eso no garantiza 100% que la 
 
 Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados principalmente a la capa de seguridad (PACE) y a los recursos sensibles como el canal de transmisión y sus extremos, la información de cliente bien sea desde la aplicación y desde la base de datos
 
+En la capa funcional se ve como los componentes manejadores de protocolos, de comunicaciones y de firmas se encargan de asegurar que la persona que entra o envía la información es quien dice ser. Adicionalmente el componente de Autorización en conjunto con el sub-sistema de seguridad se encargan de asignar los privilegios que dicho usuario puede tener sobre la aplicación de esta forma controlamos quien se conecta y que puede hacer con los datos y la aplicación 
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/SeguridadVistaFuncional.png]]
 
 
