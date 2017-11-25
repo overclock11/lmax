@@ -135,40 +135,11 @@ Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
 ### A nivel de Hardware
-Redundancia Activa: Iniciaremos con 3 componentes de HW y SW del BusinessLogic los cuales estarán recibiendo peticiones todo el tiempo
-
-LoadBalancing: Para distribuir las peticiones entre los 3 componentes de manera equitativa aun cuando algunos de ellos no están en linea en algún momento del tiempo
 
 ### A nivel de Software
 
-Caída Graciosa de los Componentes: Atraparemos todas las excepciones para gestionarlas adecuadamente y además informar del hecho mediante el envío de un mensaje a una cola asíncrona que se comunica con los monitores para su seguimiento y control. Además limpiar y cerrar todas las conexiones antes de caer para no degradar paulatinamente el sistema
-
-Monitor: Componente que valida el estatus tanto del Hardware como del Software asociado a los BusinessLogic y los componentes críticos asociados como la conexión a la base de datos de productos y de clientes. De forma que al notar una situación o posible causa de falla (Fault) el administrador pueda sacar el componente de linea y volver a introducirlo sin afectar al usuario final. También este componente es responsable de recibir y gestionar los mensajes de caída de los componentes y registrarlo en la base da datos para análisis de fallas del sistema.
-
-Replicar Información: En nuestro análisis funcional nos dimos cuenta de que el catálogo por si solo es un punto de concurrencia y de falla de todo el sistema, sin acceso al catálogo de productos ningún proceso puede funcionar independientemente de los robustos que sean sus componentes de HW y SW. Por este motivo como el catálogo de productos en una entidad de información relativamente estática se puede replicar en memoria cache en cada uno de los nodos donde se ejecutan los BusinessLogic de forma que cada nodo del grupo de escalamiento sea autónomo en su ejecución (Ver Vista de Despliegue)
-
-El siguiente método muestra como se obtiene la información del producto desde cache o desde la DB cuando la información no se a cargado.
-```javascript
-getProduct = function (productId, done) {
-    let key = "product/" + productId;
-    cacheManager.get(key, function (product) {
-        if (process.env.CCVAPP_REDIS_URL && product) {
-            done(product);
-        } else {
-            productPersistence.getProduct(productId, (productDB) => {
-                cacheManager.set(key, productDB);
-                done(productDB);
-            });
-        }
-    });
-};
-```
-
 ### Prueba del Experimento  
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
-Intencionalmente haremos fallar uno de los nodos de busineslogic y seguiremos enviando la carga al sistema de acuerdo al caso de negocio y medir los resultados de disponibilidad, luego haremos fallar dos de los componentes y repetiremos el experimento para validar que aun en esas condiciones podemos seguir operando. Estos nodos que caen debe reiniciarse por si solos y reintroducirse en el sistema sin afectar la operación 
-
-Por ultimo sacaremos por unos segundos la conexión al catálogo de productos y veremos el impacto a los nodos del BusinessLogic contando con que ellos tienen la información de productos en la memoria cache de cada nodo
 
 ### Hardware / SW usado
 
