@@ -139,7 +139,12 @@ Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 ### A nivel de Software
 
 ### Prueba del Experimento  
+El servicio está expuesto mediante https  lo cual asegura el canal mediante el cual se transfiere la información de CCV, pero en las premisas del usuario en el browser existe la vulnerabilidad a ataques de cross site scripting, hoy en día una de los ataques más usados en esta modalidad es el Cross Site Request Forgery,  este ataque aprovecha que el browser ya tiene los tokens de autenticación y emite request al servidor de CCV a nombre del usuario autenticado, con lo cual puede obtener información valiosa para CCV. 
+Para prevenir este ataque nuestro cliente web  recibe los mensajes cifrados y así  el atacante puede obtener la información  pero dado que está cifrada no le será útil.
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/CrossSiteRequestForgery.PNG]]
+
+
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
 ### Hardware / SW usado
