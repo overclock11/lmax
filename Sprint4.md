@@ -120,7 +120,7 @@ En la capa funcional se ve como los componentes manejadores de protocolos, de co
 
 #### Vista de Despliegue
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama despliegue Sprint 3.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama despliegue Sprint 4.png]]
 
 ## Puntos de Sensibilidad
 La decisión critica de diseño está en lograr asegurar la información sensible del cliente en su transmisión y su almacenamiento de ataques tanto externos como internos tanto en los canales de transmisión como en la aplicación y en la base de datos, a la vez que requerimos mantener dentro de limites aceptables los atributos de calidad de latencia, escalabilidad y disponibilidad. Por tanto nuestra arquitectura debe manejar los casos de suplantación de identidad, accesos no autorizados a los recursos críticos y asegurar canales débiles en todo el proceso
