@@ -159,37 +159,17 @@ Como componente de SW adicional a los ya usados con los sprints anteriores:
 * RDS
 * LoadBalancer
 
-Adicionamos la herramienta de HappyApps.io para obtener medidas de disponibilidad (99,999%) e información de fallos de la disponibilidad del sistema 
-* HappyApps.io
 
 ## Resultados
 
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/ExperimentoDisponibilidad3.PNG]]
-Para la primera iteración del experimento se obtuvieron resultados satisfactorios, para esta se utilizó la configuración expuesta anteriormente de 3 instancias, bajo redundancia activa, las cuales estan encargadas de atender las peticiones. Cada una de estas instancias sufrió una caída programada y fueron reintroducidas con EPM2, esto con el fin de medir el nivel de respuesta del sistema ante este tipo de situaciones.
-
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (2).PNG]]
-
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (3).PNG]]
-
-Sobre los 30 segundos que se repartieron las 500 peticiones, se lograron satisfacer todas las peticiones y lograr una media de 375 ms.
-
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/happyapps (4).PNG]]
-
-Ademas mediante el uso de happyApps monitoreamos la disponibilidad del servicio durante el experimento, lo cual demostró que a pesar de las caídas programadas de los componentes de Business Logic, el servicio siempre estuvo disponible para atender todas las peticiones simuladas.
 
 ## Análisis de Resultados y Respuesta al problema
 
-Para el experimento solo se realizó una iteración puesto que se observo un comportamiento favorable del sistema bajo las condiciones establecidas para dar visto buenos a las decisiones arquitecturales. Desde la perspectiva de hardware son de gran importancia la redundancia activa y la re sincronización de componentes pues estos nos permitirán en gran medida responder a las peticiones bajo condiciones difíciles. Por el lado de software el monitoreo de los componentes es crucial y seria importante el poder involucrar un sistema de alertas en el futuro para complementar el esquema definido. 
 
-Dado los resultados positivos, con una media de atención de 375 ms consideramos que las desiciones arquitecturales tomadas son correctas y no se realizaran cambios a la propuesta. 
 ## Retrospectiva
 
-[Video Arquitectura y Puntos de Sensibilidad](https://youtu.be/T1p-Afn1xjs)  
 
-[Video Diseño del Experimento](https://youtu.be/X0nGhSMfRyQ) 
-
-[Video Resultados del Experimento](https://youtu.be/c_mXIl2CUkc) 
 
 ## Aspectos Positivos del Sprint y del Equipo
 
