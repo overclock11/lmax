@@ -110,10 +110,9 @@ Aun cuando los canales son asegurados usando HTTPS eso no garantiza 100% que la 
 
 #### Vista Funcional
 
-Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados con los componentes de BusinessLogic y la disponibilidad del catalogo de productos y el subistema de clientes.
-**Ver componentes y monitor de salud de componentes. Círculo Azul**. El monitor de saludo usa una táctica de arquitectura Echo - Ping a los diferentes componentes y además tiene como función recibir los errores de los componentes y registrarlos en la base de datos
+Desde un punto de vista funcional observamos que los puntos críticos en la disponibilidad están asociados principalmente a la capa de seguridad (PACE) y a los recursos sensibles como el canal de transmisión y sus extremos, la información de cliente bien sea desde la aplicación y desde la base de datos
 
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/DisponibilidadVistaFuncional.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/SeguridadVistaFuncional.png]]
 
 
 #### Vista de Despliegue
