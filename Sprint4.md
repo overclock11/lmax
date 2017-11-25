@@ -88,17 +88,23 @@ Como antecedentes históricos de CCV en varias ocasiones empleados internos de C
 ## Arquitectura Propuesta
 
 ### General
-La propuesta de arquitectura de este sprint comprende la unificación de las decisiones tomadas en el sprint 1 para favorecer la Latencia con las que el equipo ha tomado para favorecer la Escalabilidad. Las tácticas a aplicar tienen por objetivo el trabajar en conjunto con el estilo arquitectural LMAX para que el sistema se comporte de forma adecuada en momentos de gran estrés.
+
+La propuesta de arquitectura de este sprint comprende la incorporación de un estilo de arquitectura que soporte la seguridad tanto de las comunicaciones como la identidad del usuario que accede la información con los privilegios adecuados sin sacrificar mucho los otros atributos de calidad ya logrados. 
 
 ### Estilo de Arquitectura
 
+El estilo de arquitectura usado en este Sprint es una adaptación PACE - C2 sobre la arquitectura ya montada en los sprints anteriores con LAMDA y LMAX
+
 ### Tácticas de Arquitectura
 
-#### Táctica Software
+#### Usar defaults de Seguridad
+CCV no usa defaults de seguridad luego hay mucho personal que tiene acceso tanto aplicativos y base de datos aun cuando no deberían tener dicha autorización 
 
-#### Táctica Hardware
- 
+#### Detectar intrusión
+La intrusión la detectaremos por medio de credenciales de usuario complementado con llaves publicas y privadas y firma digital para asegurar que no solo el usuario provee sus credenciales sino que también el dispositivo desde donde se envía es un dispositivo de confianza
 
+#### Encripción de Información 
+Aun cuando los canales son asegurados usando HTTPS eso no garantiza 100% que la información no sea extraída en los extremos o aun ya al interior de la aplicación en CCV por lo tanto usaremos encripción de datos sensible lo cual hace que la información no tenga valor para los atacantes aun cuando la han conseguido
 
 ### Vistas
 
@@ -115,7 +121,7 @@ Desde un punto de vista funcional observamos que los puntos críticos en la disp
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/Diagrama despliegue Sprint 3.png]]
 
 ## Puntos de Sensibilidad
-La decisión critica de diseño está en lograr asegurar la información sensible del cliente en su transmisión y su almacenamiento de ataques tanto externos como internos tanto en los canales de transmisión como en la aplicación y en la base de datos, a la vez que requerimos mantener dentro de limites aceptables los atributos de calidad de latencia, escalabilidad y disponibilidad
+La decisión critica de diseño está en lograr asegurar la información sensible del cliente en su transmisión y su almacenamiento de ataques tanto externos como internos tanto en los canales de transmisión como en la aplicación y en la base de datos, a la vez que requerimos mantener dentro de limites aceptables los atributos de calidad de latencia, escalabilidad y disponibilidad. Por tanto nuestra arquitectura debe manejar los casos de suplantación de identidad, accesos no autorizados a los recursos críticos y asegurar canales débiles en todo el proceso
 
 ## Experimento
 
