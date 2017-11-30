@@ -107,6 +107,12 @@ La intrusión la detectaremos por medio de credenciales de usuario complementado
 #### Encripción de Información 
 Aun cuando los canales son asegurados usando HTTPS eso no garantiza 100% que la información no sea extraída en los extremos o aun ya al interior de la aplicación en CCV por lo tanto usaremos encripción de datos sensible lo cual hace que la información no tenga valor para los atacantes aun cuando la han conseguido
 
+#### Audit Trail
+Para llevar un registro detallado de lo que hacen los diferentes actores que acceden el sistema y poder recobrarse de posibles ataques haciendo análisis de información y patrones de ataques
+Este audit trail sera manejado de forma asincrónica entre el componente de negocio y el componente de auditoria para manejar la información de accesos.
+
+Este audit trail sera configurable para poder subir y bajar el nivel de auditoria pero teniendo un default mínimo de configuración marcado por la táctica: defaults de Seguridad
+
 ### Vistas
 
 #### Vista Funcional
