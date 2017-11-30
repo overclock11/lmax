@@ -121,6 +121,8 @@ Desde un punto de vista funcional observamos que los puntos críticos en la disp
 
 En la capa funcional se ve como los componentes manejadores de protocolos, de comunicaciones y de firmas se encargan de asegurar que la persona que entra o envía la información es quien dice ser. Adicionalmente el componente de Autorización en conjunto con el sub-sistema de seguridad se encargan de asignar los privilegios que dicho usuario puede tener sobre la aplicación de esta forma controlamos quien se conecta y que puede hacer con los datos y la aplicación 
 
+Por otro lado también se ven los componentes de auditoria y control que registran eventos sensible sobre el sistema o la base de datos
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/SeguridadVistaFuncional.png]]
 
 
