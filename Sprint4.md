@@ -111,7 +111,7 @@ Aun cuando los canales son asegurados usando HTTPS eso no garantiza 100% que la 
 Para llevar un registro detallado de lo que hacen los diferentes actores que acceden el sistema y poder recobrarse de posibles ataques haciendo análisis de información y patrones de ataques
 Este audit trail sera manejado de forma asincrónica entre el componente de negocio y el componente de auditoria para manejar la información de accesos.
 
-Este audit trail sera configurable para poder subir y bajar el nivel de auditoria pero teniendo un default mínimo de configuración marcado por la táctica: defaults de Seguridad
+Este audit trail será configurable para poder subir y bajar el nivel de auditoria pero teniendo un default mínimo de configuración marcado por la táctica: defaults de Seguridad
 
 ### Vistas
 
