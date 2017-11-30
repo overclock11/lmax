@@ -94,7 +94,7 @@ La propuesta de arquitectura de este sprint comprende la incorporación de un es
 
 ### Estilo de Arquitectura
 
-El estilo de arquitectura usado en este Sprint es una adaptación PACE - C2 sobre la arquitectura ya montada en los sprints anteriores con LAMDA y LMAX
+El estilo de arquitectura usado en este Sprint es una adaptación PACE - C2 sobre la arquitectura ya montada en los sprints anteriores con LAMDA y LMAX. Sin embargo hicimos algunas adaptaciones al modelo PACE ya que no necesitamos algunas de las capas como la capa de datos del modelo PACE con el fin de favorecer la latencia 
 
 ### Tácticas de Arquitectura
 
