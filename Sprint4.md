@@ -174,9 +174,11 @@ Los servicios de CCV están expuestos mediante el protocolo https  lo cual asegu
 
 [Video Cross Man-in-the-middle attack (MITM) y Solución](https://youtu.be/xzoWmqtuNyQ)
 
+Este tipo de ataque aprovecha el acceso que pueda tener el atacante a cualquier elemento de red que se encuentre entre el sistema CCV y el dispositivo del cliente, en un canal de comunicación que no esté cifrado, es fácil para el atacante instalar un sniffer y comenzar robar información valiosa de CCV.
+
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/MITM1.PNG]]
 Para prevenir este ataque nuestro cliente web  recibe los mensajes cifrados y así  el atacante puede obtener la información  pero dado que está cifrada no le será útil.
-
+Además el contar con un canal de comunicación cifrado  al contar un certificado de seguridad en el servidor es mucho más difícil para el atacante poder asimilar la información que pueda interceptar.
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/MITM2.PNG]]
 
