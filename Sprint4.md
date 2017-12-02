@@ -190,7 +190,7 @@ Como componente de SW adicional a los ya usados con los sprints anteriores:
 
 
 ## Retrospectiva
-
+[Arquitectura y Puntos de Sensibilidad](https://youtu.be/nBeuSxaUNG4)
 
 
 ## Aspectos Positivos del Sprint y del Equipo
