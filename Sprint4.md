@@ -161,6 +161,9 @@ Como se observa en el reporte, no se obtuvieron vulnerabilidades mayores a nivel
 
 ### Prueba del Experimento  
 #### Prueba 1- Cross Site Request Forgery
+
+[Video Cross Site Request Forgery y Solución](https://youtu.be/2kqvTtcQAns)
+
 Los servicios de CCV están expuestos mediante el protocolo https  lo cual asegura el canal mediante el cual se transfiere la información de CCV; sin embargo en las premisas del usuario, específicamente  en el browser existe la vulnerabilidad a ataques de cross site scripting, hoy en día una de los ataques más usados en esta modalidad es el Cross Site Request Forgery,  este ataque aprovecha que el browser ya tiene los tokens de autenticación y emite request al servidor de CCV a nombre del usuario autenticado, con lo cual puede obtener información valiosa para CCV para enviarla a al atacante o en el peor de los casos ejecutar acciones en la aplicación de CCV sin que el usuario se entere.
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/CrossSiteRequestForgery.PNG]]
