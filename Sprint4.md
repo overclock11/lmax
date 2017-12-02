@@ -174,6 +174,11 @@ Para prevenir este ataque nuestro cliente web  recibe los mensajes cifrados y as
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
+#### Prueba 2- Man-in-the-middle
+
+[Video Cross Man-in-the-middle attack (MITM) y Solución](https://youtu.be/xzoWmqtuNyQ)
+
+
 ### Hardware / SW usado
 
 Como componente de SW adicional a los ya usados con los sprints anteriores:
