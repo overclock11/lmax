@@ -147,12 +147,17 @@ Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 
 
 ### Análisis de vulnerabilidades
+
+[Video Análisis de vulnerabilidades](https://youtu.be/VF_dkj6TwEk)
+
 Realizamos un análisis del aplicativo previo a la definición del experimento para detectar vulnerabilidades que podrían dar indicios de cambios a realizar en la arquitectura o plantearan una re-definición del experimento.
 Para ello utilizamos Nessus, en la cual definimos un escaneo avanzado apuntando a la ip local junto con los puertos que corresponden a las instancias de los servicios de CCV.
 
 Una vez finalizado el escaneo, este fue el reporte que se obtuvo.
 
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/scanNesuss.png]]
+
+Como se observa en el reporte, no se obtuvieron vulnerabilidades mayores a nivel Medium que nos hicieran replantear puntos importantes de la arquitectura o del experimento, por lo cual decidimos proseguir con el planteamiento inicial.
 
 ### Prueba del Experimento  
 #### Prueba 1- Cross Site Request Forgery
