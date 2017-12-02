@@ -174,11 +174,11 @@ Los servicios de CCV están expuestos mediante el protocolo https  lo cual asegu
 
 [Video Cross Man-in-the-middle attack (MITM) y Solución](https://youtu.be/xzoWmqtuNyQ)
 
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/MITM1.PNG]]
 Para prevenir este ataque nuestro cliente web  recibe los mensajes cifrados y así  el atacante puede obtener la información  pero dado que está cifrada no le será útil.
 
 
-
-[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/MITM2.PNG]]
 
 ### Hardware / SW usado
 
