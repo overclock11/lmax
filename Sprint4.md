@@ -280,7 +280,7 @@ module.exports.authenticateUser = function (request, callback) {
 
 ```
 
-
+Hicimos la validación del tiempo que se incrementa de latencia adicionando esta verificación en cada llamado y encontramos que no se superan los 100ms esto ocurre porque el token que se emite en el primer servicio para el caso del experimento no tiene ningún acceso a capas de persistencia.
 
 ## Retrospectiva
 
