@@ -199,6 +199,88 @@ Como componente de SW adicional a los ya usados con los sprints anteriores:
 
 ## Análisis de Resultados y Respuesta al problema
 
+Dado que no queremos romper con el atributo de escalabilidad en el sistema CCV, decidimos montar en el experimento un sistema de autenticación por medio de un token de sesión mantenido en el cliente y así mantener los componentes del módulo de ventas sin estado.
+ El token de autenticación va a ser validado por el back-end de CCV toda vez que un cliente web quiera acceder algún servicio REST, si el token es valido y no ha expirado, entonces la consulta al servicio REST se ejecutará normalmente.
+
+```javascript
+app.use(function(req, res, next) {
+    authenticationProvider.middlewareVerifyToken(req,res,next);
+});
+
+//--------------------------------------------
+module.exports.middlewareVerifyToken = function (req,res,next) {
+    // check header or url parameters or post parameters for token
+    let token = req.body.token || req.query.token || req.headers['x-access-token'];// || req.cookies['session-cookie'];
+    // decode token
+    if (token) {
+        // verifies secret and checks exp
+        jwt.verify(token, 'thisisthesupersecretkey', function (err, decoded) {
+            if (err) {
+                return res.json({success: false, message: 'Failed to authenticate token.'});
+            } else {
+                // if everything is good, save to request for use in other routes
+                req.decoded = decoded;
+                next();
+            }
+        });
+
+    } else {
+        // if there is no token
+        // return an error
+        return res.status(403).send({
+            success: false,
+            message: 'No token provided.'
+        });
+    }
+};
+
+```
+Para obtener el token existe un servicio REST inicial al cual se le proporciona la pareja de credenciales userName y password, estos datos se validan y se devuelve como respuesta el token de autenticación
+
+```javascript
+
+module.exports.authenticateUser = function (request, callback) {
+
+    let registeredUserName = "ccvadmin";
+    let registeredPassword = "admin123";
+    console.log('data', request);
+    // find the user
+    let userName = request.userName;
+    let userPassword = request.password;
+
+
+    if (userName !== registeredUserName) {
+        callback({success: false, message: 'Authentication failed. User not found.'});
+    } else if (userName === registeredUserName) {
+
+        // check if password matches
+        if (userPassword !== registeredPassword) {
+            callback({success: false, message: 'Authentication failed. Wrong password.'});
+        } else {
+
+            // if user is found and password is right
+            // create a token with only our given payload
+            // we don't want to pass in the entire user since that has the password
+            const payload = {
+                admin: true
+            };
+            let token = jwt.sign(payload, 'thisisthesupersecretkey', {
+                expiresIn: 86400 // expires in 24 hours
+            });
+
+            // return the information including token as JSON
+            callback({
+                success: true,
+                message: 'Enjoy your token!',
+                token: token
+            });
+        }
+    }
+};
+
+```
+
+
 
 ## Retrospectiva
 
