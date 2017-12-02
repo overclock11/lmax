@@ -289,13 +289,12 @@ Hicimos la validación del tiempo que se incrementa de latencia adicionando esta
 
 ## Aspectos Positivos del Sprint y del Equipo
 
-En este sprint desde el punto de vista del equipo con la dinámica que trajimos del sprint 2 el equipo fluyó mayor sincronía, y asertividad. 
-
-Dividimos el equipo en 2 grupos: Frente Funcional y Frente Técnico para iniciar actividades, pero teniendo nuestro Daily Sprint para sincronizar los equipos, cuando el equipo funcional terminó sus labores, paso a apoyar el equipo técnico para culminar el experimento
+En este sprint desde el punto de vista del equipo con la dinámica que trajimos del sprint 2 y 3 el trabajo del equipo fluyó mucho mejor.
+Igual que en los anteriores sprints dividimos el equipo en 2 grupos: Frente Funcional y Frente Técnico para iniciar actividades, pero teniendo nuestro Daily para sincronizar los equipos, cuando el equipo funcional terminó sus labores, paso a apoyar el equipo técnico para culminar el experimento.
 
 ## Aspectos a Mejorar del Sprint y del Equipo
 
-Creemos como equipo que aun nos falta mucho mas conocimiento técnico de NodeJS para hacer una manejo optimo de Threads, Memoria Compartida, y sincronización de procesos para llevar el estilo de arquitectura LMAX a su máxima expresión. 
+Nos falta mucho más conocimiento técnico de NodeJS sobre temas de seguridad. 
 
  
 
