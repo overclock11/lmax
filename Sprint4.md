@@ -146,6 +146,13 @@ Ya sea directamente en la base de datos o interceptandola mientras es enviada.
 [[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/dise%C3%B1o%20experimento%20seguridad.png]]
 
 
+### Análisis de vulnerabilidades
+Realizamos un análisis del aplicativo previo a la definición del experimento para detectar vulnerabilidades que podrían dar indicios de cambios a realizar en la arquitectura o plantearan una re-definición del experimento.
+Para ello utilizamos Nessus, en la cual definimos un escaneo avanzado apuntando a la ip local junto con los puertos que corresponden a las instancias de los servicios de CCV.
+
+Una vez finalizado el escaneo, este fue el reporte que se obtuvo.
+
+[[https://github.com/MISO-4206/Grupo-6/blob/master/Documents/Images/scanNesuss.png]]
 
 ### Prueba del Experimento  
 #### Prueba 1- Cross Site Request Forgery
